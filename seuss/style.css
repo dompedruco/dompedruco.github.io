@@ -1,0 +1,291 @@
+
+	/* *****************************************************************************
+* HTML RESETS
+* To learn more, read Eric Meyer's awesome article here: 
+* http://meyerweb.com/eric/tools/css/reset/ 
+******************************************************************************* */
+html, body, div, h1, h2, h3, h4, h5, h6, p, 
+blockquote, a, img, form, label, table, caption, 
+tbody, tfoot, thead, tr, th, td, article, 
+aside, figure, figcaption, footer, header, 
+nav, section{
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;	
+}
+body {
+	line-height: 1;
+	
+}
+
+ol, ul {
+	list-style: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+.box{
+min-height: 100%;
+position: relative;
+}
+	
+.boxcontainer{
+	max-width:980px;
+}
+
+	
+		
+ul#main-nav{
+position:fixed;
+width:500px;
+color: #89C2A5;
+z-index:1;
+left:0;
+bottom:0;
+}
+
+ul#main-nav>li>a{
+margin-left:10px;
+
+display:block;
+float:left;
+text-decoration:none;
+color:white;
+font-family: 'Patrick Hand SC', cursive;
+font-size:25pt;
+letter-spacing: 10px;
+}
+
+ul#main-nav>li>a:hover{
+color:yellow;
+}
+
+#homeimage {
+ width: 336px; /* width of image */
+ height: 394px; /* height of image */
+ background-image: url(img/face.png);
+ background-repeat:no-repeat;
+ display:block;
+margin-left: auto;
+margin-right: auto;
+margin-top:100px;
+}
+
+#homeimage:hover {
+background-image: url(img/face2.png);
+}
+
+#footer {  position: absolute;
+    bottom: 0;
+    width: 100%;
+    left: 0px;
+    height: 206px; }
+
+
+
+#wrapper{
+
+min-height: 100%;
+position: relative;
+width: 100%;
+
+}
+
+
+
+
+.homequote{
+padding-top:80px;
+margin-left:auto;
+margin-right:auto;
+display:block;
+}
+.quote{
+padding-top:70px;
+margin-left:40px;
+
+}
+
+.clickquote{
+
+}
+
+.bounce2{
+	dispaly:black !important;
+	z-index:inherit;
+	overflow:visible;!important;
+	
+}
+
+.stroke1{
+margin-left:70px;
+}
+
+.stroke2{
+margin-left:130px;
+}
+
+.stroke3{
+margin-left:270px;
+}
+
+.stroke4{
+margin-left:300px;
+}
+
+.stroke5{
+margin-left:90px;
+}
+
+.stroke6{
+margin-left:225px;
+}
+
+.quote1{
+margin-left:-732px;
+
+}
+
+.quote2{
+margin-left:-675px;
+}
+
+
+.quote3{
+margin-left:-699px;
+}
+
+.quote4{
+margin-left:-729px;
+}
+
+.quote5{
+margin-left:-710px;
+}
+
+.quote6{
+margin-left:-663px;
+}
+
+
+
+#a{
+
+	width:100%;
+background-color:#EC382E;
+}
+
+#b {
+	
+	width:100%;
+	background-color: #EA5E42;
+	background-image:url('img/lorax2.png');
+	background-size:contain;
+	background-position:top right;
+	background-repeat:no-repeat;
+}
+	
+#c {
+	width:100%;
+	background-color:#F59F44;
+	background-image:url('img/grinch2.png');
+	background-size:contain;
+	background-position:top right;
+	background-repeat:no-repeat;
+}
+
+#d {
+	width:100%;
+	background-color:#EB5A8C;
+	background-image:url('img/thing2.png');
+	background-size:contain;
+	background-position:top right;
+	background-repeat:no-repeat;
+}
+	
+#e {
+	width:100%;
+	background-color:#98C979;
+	background-image:url('img/greeneggs2.png');
+	background-size:contain;
+	background-position:top right;
+	background-repeat:no-repeat;
+}
+
+#f {
+	width:100%;
+	background-color:#396F97;
+		background-image:url('img/fox2.png');
+	background-size:contain;
+	background-position:top right;
+	background-repeat:no-repeat;
+}
+
+#g {
+	width:100%;
+	background-color:#8271B8;
+	background-image:url('img/hat2.png');
+	background-size:contain;
+	background-position:top right;
+	background-repeat:no-repeat;
+}
+	
+
+.box3{ 
+width: 470px; 
+height: 400px;
+float:right;
+
+}
+
+.box3 img{
+float:right;
+margin-bottom:0px;
+right:10px;
+position:absoulte;
+}
+
+
+
+
+.bottom img{
+float:left;
+margin-top:70px;
+margin-left:40px;
+position:absolute;
+}
+
+
+.back_to_top{
+float:right;
+text-decoration:none;
+background-image:url(img/arrow.png);
+text-indent:-9000px;
+width:70px;
+height:92px;
+}
+
+
+
+#myimage {
+    width: 100px;
+    height: 100px;
+    background: orange;
+    
+    top: 50px;
+}
+
+.five.columns{ width: 280px; margin-top:30px;  }
+.clear {
+	clear: both;
+	display: block;
+	overflow: hidden;
+	visibility: hidden;
+	width: 0;
+	height: 0;
+}

@@ -1,0 +1,24 @@
+@charset "UTF-8";
+/* CSS Document */
+
+
+#header>ul>li{
+	
+}
+
+#header>ul>li:nth-child(1) {
+background:#3F6;
+}
+
+#header>ul>li:nth-child(2) {
+background:#yellow;
+}
+
+#header>ul>li:nth-child(3) {
+background:#orange;
+}
+
+.gallery-item: nth-child(4n+1) {
+background: rbga(255, 255, 255, 0.2); 
+}
+

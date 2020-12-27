@@ -1,0 +1,31 @@
+@charset "UTF-8";
+/* CSS Document */
+
+body {
+	background:green;	
+}
+
+#wrap {
+	width:100%;	
+}
+
+#gallery {
+	margin:10px;	
+}
+
+.gallery-item {
+	width:29%;
+	margin:2%;
+	float:left;	
+}
+
+.gallery-image {
+	width:100%;	
+	height:auto;
+}
+
+
+
+
+
+

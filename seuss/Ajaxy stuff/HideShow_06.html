@@ -1,0 +1,58 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Slideshow Ajax Style</title>
+<script type="text/javascript" src="jquery-1.4.2.min.js"></script>
+<script type="text/javascript">
+$(document).ready( function() {
+	// Assign each small image a click event
+	$('#icons a').click( function( event ) {
+		// each thumbnail is an anchor if JS is disabled it will load the image
+		event.preventDefault();	// disable the regular anchor function
+		// set the src attribute of the large image to the href of the anchor clicked. 
+		
+		// $(element).attr("title")
+		// $(element).attr("title", "Hello")
+		// $(element).attr({title:"Hello", width:"200", height:"100"})
+		
+		$('#images img').attr( {src:$(this).attr("href"),		// set the href
+								title:$(this).attr('title'),	// set the title
+								alt:$(this).attr('title') } );	// and the alt also
+	});					   
+}); // End Document Ready!
+
+
+
+// http://api.jquery.com/event.preventDefault/
+// http://api.jquery.com/attr/
+</script>
+</head>
+
+<body>
+	<div id='wrap'>
+		<div id='images'>
+			<img title="Hello" alt="" src="images/Apple_Leaf.jpg" width="633" height="500">
+		</div>
+        
+		<div id='icons'>
+			<a href='images/Apple_Leaf.jpg' title="Apple Leaf"><img src="images/Apple_Leaf_icon.jpg" width="90" height="90"></a>
+			
+            <a href='images/Curl.jpg'  title="Curly Leaf">
+				<img src="images/Curl_icon.jpg" width="90" height="90">
+			</a>
+			
+            <a href='images/Dew-Drops-Green-Leaf-1.jpg'  title="Dew Drops"><img src="images/Dew-Drops-Green-Leaf-1_icon.jpg" width="90" height="90"></a>
+			<a href='images/fall-leaf-01.jpg'  title="Fall Leaf"><img src="images/fall-leaf-01_icon.jpg" width="90" height="90"></a>
+		</div>
+        
+    </div>
+</body>
+</html>
+
+
+
+
+
+
+

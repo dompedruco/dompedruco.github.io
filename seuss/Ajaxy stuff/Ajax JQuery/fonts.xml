@@ -1,0 +1,738 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<type>
+	<font>
+		<name>Avant Garde</name>
+		<designer>Herb Lubalin, Tom Carnase</designer>
+		<foundry>International Typeface Corporation , Lubalin, Burns & Co.</foundry>
+		<date>1970</date>
+		<history>ITC Avant Garde Gothic is a font family based on the logo font used in the Avant Garde Magazine. The original commercial release only included five roman weights and included one version for headlines and one for body copy. The modern digitized releases do not include the ligatures and alternate characters of the headline version.</history>
+		<family>Book, Book Condensed, Cook Condensed Oblique, Bold, Bold Oblique, Bold Condensed, Bold Condensed Oblique, Demi, Demi Oblique, Demi Condensed, Demi Condensed Oblique, Extra Light, Extra Light Oblique, Extra Light Condensed, Extra Light Condensed Oblique, Medium, Medium Oblique, Medium Condensed, Medium Condensed Oblique, Book Oblique</family>
+		<classification>Sans Serif, Geometric Sans</classification>
+		<distributor>Linotype, FontShop, International Typeface Corporation, Adobe</distributor>
+		<usage>Avant Garde is used for Meralco, Adidas, Sony Corporation including AXN Asia and Fox Asia</usage>
+		<characteristics></characteristics>
+	</font>
+
+	<font>
+		<name>Trajan</name>
+		<designer>Carol Twombly</designer>
+		<foundry>Adobe Systems</foundry>
+		<date>1989, 2001</date>
+		<history>The inscription on the base of the Trajan column in Rome is an example of classic Roman letterforms, which reached their peak of refinement in the first century A.D. It is believed that the letters were first written with a brush, then carved into the stone.</history>
+		<family>Regular, Bold</family>
+		<classification>Inscriptional, Roman Inscriptional</classification>
+		<distributor>MyFonts, Veer, Adobe</distributor>
+		<usage>American movie posters, television shows, and book covers. Many universities and political parties also use Trajan as their official font.</usage>
+		<characteristics>Based on the letterforms of capitalis monumentalis or Roman square capitals</characteristics>
+	</font>
+
+	<font>
+		<name>Sabon</name>
+		<designer>Jan Tschichold</designer>
+		<foundry>D Stempel AG , Linotype , Monotype</foundry>
+		<date>1964</date>
+		<history>Sabon was originally released as foundry type and as hot-metal type for Monotype and Linotype casting machines.</history>
+		<family>Roman, Italic, Bold, Bold Italic</family>
+		<classification>Serif, Old Style, French Old Style</classification>
+		<distributor>Linotype</distributor>
+		<usage>Bible, Foundry type, iliturgical texts</usage>
+		<characteristics>These flaws, such as the equal width of the roman and italic and the abrupt truncation of the italic f's descender, give Sabon a unique character that separates it from other Garamonds. A distinguishing feature of the typeface was that the roman, italic and bold weights all occupy the same width when typeset.</characteristics>
+	</font>
+
+<font>
+	<name>Bembo</name>
+	<designer>Stanley Morison, Francesco Griffo</designer>
+	<foundry>Monotype</foundry>
+	<date>1929</date>
+	<history>Bembo is the name given to an old style serif typeface based upon a face cut by Francesco Griffo, first printed in February 1496 (1495 more veneto). Griffo worked in the Venetian press of the humanist printer Aldus Manutius.</history>
+	<family></family>
+	<classification>Serif, Old Style, French Old Style</classification>
+	<distributor>MyFonts, Linotype, FontShop</distributor>
+	<usage>Book setting, short text, expressing classic beauty or fomral tradition in typographical design, good book face.</usage>
+	<characteristics>minimal variation in thick and thin stroke weight, small x-height, ascender height exceeding cap height, oblique stress, short, bracketed serifs with cupped bases, angled top serifs on lower case letters
+</characteristics>
+</font>
+
+<font>
+	<name>Thesis</name>
+	<designer>Lucas de Groot</designer>
+	<foundry>LucasFonts, FontFabrik</foundry>
+	<date>1994</date>
+	<history>Thesis was conceived as a versatile typographic system of ambitious scope. It grew out of a dissatisfaction with the limited range of good typefaces available for corporate identity projects. It aims to fill that gap by providing the user with three compatible styles — TheSans, TheMix and TheSerif — in an optically harmonious range of eight weights, including real italics for each weight.</history>
+	<family>TheSansMono, TheSansTypewriter, </family>
+	<classification>TheSans, TheSerif, TheMix, TheAntiqua, Collections</classification>
+	<distributor>FontShop, LucasFonts</distributor>
+	<usage>Many organisations, publicaitons, and websites use this typeface thus it is one of the most widely used sans-serifs world-wide.</usage>
+	<characteristics>TheSans is a low-contrast typeface, meaning the differences between thin and thick strokes are not very pronounced. Yet the reference to writing with the broad-nibbed pen is still present, giving the letters a diagonal stress and a forward flow that facilitates reading.</characteristics>
+</font>
+
+<font>
+	<name>Rotis</name>
+	<designer>Otl Aicher</designer>
+	<foundry>Monotype</foundry>
+	<date>1988</date>
+	<history>The blending of sans with serif was almost revolutionary when Aicher first started working on the idea. </history>
+	<family>Rotis Serif, Rotis Sans Serif, Rotis Semi Sans, Rotis Semi Serif, Rotis Pro</family>
+	<classification>Serif</classification>
+	<distributor>Fontshop, MyFonts, Linotype</distributor>
+	<usage>Book text, documentation, business reports, business correspondence, magazines, newspapers, posters, advertisements, multimedia, and corporate design.</usage>
+	<characteristics>The blending of sans with serif was almost revolutionary when Aicher first started working on the idea. </characteristics>
+</font>
+
+<font>
+	<name>OCR</name>
+	<designer>American Type Founders</designer>
+	<date>1968</date>
+	<history></history>
+	<family>OCR-A, OCR-A Extended</family>
+	<classification>Ornamented, Novelty, Machine Readable</classification>
+	<distributor>MyFonts</distributor>
+	<usage>Computer opitcal character recognition</usage>
+	<characteristics>simple, thick strokes to form recognizable characters: The font is monospaced (fixed-width), with the printer required to place glyphs 0.254 cm (0.10 inch) apart, and the reader required to accept any spacing between 0.2286 cm (0.09 inch) and 0.4572 cm (0.18 inch).</characteristics>
+</font>
+
+<font>
+	<name>Clarendon</name>
+	<designer>Robert Besley</designer>
+	<foundry>Fann Street Foundry</foundry>
+	<date>1845</date>
+	<history>Besley had to register Clarendon under Britain's Ornamental Designs Act of 1842 due to it's popularity and is considered the first registered typeface.</history>
+	<family>Regular, Light, Bold, Heavy, Black, Condensed</family>
+	<classification>Serif, Slab Serif, Clarendon</classification>
+	<distributor>Adobe, Linotype, Monotype, MyFonts</distributor>
+	<usage>The font was used extensively by the government of the German Empire for proclamations during World War I, and was also common in wanted posters of the American Old West. Clarendon was used by the United States National Park Service on traffic signs. The Ruby Tuesday restaurant chain also used the typeface for their corporate identity. Corporations such as Sony, Pitchfork Media, and Wells Fargo uses Clarendon as their logo typeface.</usage>
+	<characteristics></characteristics>
+</font>
+
+<font>
+	<name>Stone</name>
+	<designer>Sumner Stone</designer>
+	<foundry>Stone Type Foundry></foundry>
+	<date>1987</date>
+	<history>Sumner Stone completed his designs for the Stone type family. ITC Stone solves the problem of mixing different styles of type on the same page. Most combined type styles, because they arent designed to work together, often have radically different characteristics such as cap heights, stem weights, and proportions.</history>
+	<family>ITC Stone Sans, ITC Stone Serif, ITC Stone Humanist, ITC Stone Informal, ITC Stone Sans II, ITC Stone Sans Pro, ITC Stone Phonetic Sans</family>
+	<classification>Humanist</classification>
+	<distributor>Adobe</distributor>
+	<usage>dictionaries, language guides, linguistic texts, or wherever else spoken sounds need to be typographically represented.</usage>
+	<characteristics></characteristics>
+</font>
+
+<font>
+	<name>Franklin Gothic</name>
+	<designer>Morris Fuller Benton, Victor Caruso</designer>
+	<foundry>ITC , Elsner+Flake , Adobe Systems</foundry>
+	<date>1902, 1979, 1991</date>
+	<history>The font was originally released as two designs: one for display type and one for text. However, when Adobe commissioned the early digital fonts of ITC Franklin Gothic, the fonts were based on the display design, but characters were modified and spaced so they could also be used at small sizes. The idea was that the same font could be used to set type from tiny 6-point text to billboard-size letters. This digital interpretation became the standard for the digitized ITC Franklin Gothic family. </history>
+	<family>Book, Medium, Demi, Heavy, Italic, Book, Italic Medium, Italic Demi, Italic Heavy, Compressed Book Extra, Compressed Demi Extra, Compressed Book, Compressed Demi, Compressed Italic Book, Compressed Italic Demi, Condensed Book, Medium Condensed, Condensed Demi, Italic Book Condensed, Medium Italic Condensed, Italic Demi Condensed, SC Condensed, Medium SC Condensed</family>
+	<classification>Sans Serif, Gothic</classification>
+	<distributor>MyFonts, FontShop</distributor>
+	<usage>Franklin Gothic was used for New York University lists, PBS series The Electric Company, Museum of Modern Art in New York, the Rocky film, You Don't Know Jack computer game, Cardiff University, Star Wars films' subtitles, Nickelodeon in 1980s, The Dark Knight, SBS Sports during 1980s, Lady Gaga's cover text of The Fame Monster, The New York Times, The Onion, ESPN Monday Night Football, novels and books.</usage>
+	<characteristics>Has a more traditional double-story g. Tail of the Q and the ear of the g. The tail of the Q curls down from the bottom center of the letter-form in the book weight and shifts slightly to the right in the bolder fonts. Slightly enlarged x-height and a moderately condensed lowercase alphabet Organic features that distinguish it from the geometric sans serifs.</characteristics>
+</font>
+
+
+<!-- ===== #11, Minion ===== -->
+<font>
+	<name>Minion</name>
+	<designer>Robert Slimbach</designer>
+	<date>1990</date>
+	<history>The first version of Minion was released in 1990. Cyrillic additions were released in 1992, and finally the OpenType Pro version was released in 2000. Minion Pro is inspired by classical, old style typefaces of the late Renaissance, a period of elegant, beautiful, and highly readable type designs. Minion Pro combines the aesthetic and functional qualities that make text type highly readable with the versatility of OpenType digital technology, yielding unprecedented flexibility and typographic control, whether for lengthy text or display settings</history>
+	<family>Serif</family>
+	<classification>Garalde</classification>
+	<copyright>Adobe</copyright>
+	<usage>With its many ligatures, small caps, oldstyle figures, swashes, and other added glyphs, Minion Pro is ideal for uses ranging from limited-edition books to newsletters to packaging.</usage>
+	<characteristics>The full Minion Pro family contains three weights and two widths, each with optical size variants, and each supporting a full range of Western languages, including Greek and Cyrillic.</characteristics>
+</font>
+
+<!-- ===== #12, Lucida ===== -->
+<font>
+	<name>Lucida</name>
+	<designer>Charles Bigelow, Kris Holmes</designer>
+	<date>1985</date>
+	<history>Lucida, designed and produced by Kris Holmes and Charles Bigelow in 1985, is one of the first typefaces designed with both bitmapped display screens and laser printing in mind. Lucida was also one of the first of the super family typefaces, sharing proportions and weights between serif and sans.</history>
+	<family>Serif</family>
+	<classification>Garalde</classification>
+	<copyright>Adobe, Bigelow & Holmes</copyright>
+	<usage>The Lucida typefaces perform well under adverse conditions such as fax transmission, low resolution printing, small point sizes, and reversed-out of halftones.</usage>
+	<characteristics></characteristics>
+</font>
+
+<!-- ===== #13, Didot ===== -->
+<font>
+	<name>Didot</name>
+	<designer>Firmin Didot</designer>
+	<date>1799</date>
+	<history>The typeface family known as Didot was designed by Firmin Didot in Paris in 1783. The Didot types defined the characteristics of the modern (or Didone) roman type style, with their substantial stems flowing into extremely thin hairlines; the serifs are straight across with virtually no bracketing. Because of the very fine hairlines that are characteristic of modern romans, their use was somewhat restricted in metal types.</history>
+	<family>Serif</family>
+	<classification>Didone</classification>
+	<copyright>Adobe, Linotype</copyright>
+	<usage>Designed by Adrian Frutiger for digital technology in 1992, Linotype Didot retains all of the features that make Didot types superior for book work and other text use; like Bodoni, its delicate lines are enhanced in display uses.</usage>
+	<characteristics></characteristics>
+</font>
+
+<!-- ===== #14, Frutiger ===== -->
+<font>
+	<name>Frutiger</name>
+	<designer>Adrian Frutiger</designer>
+	<date>1977</date>
+	<history>In 1968, Adrian Frutiger was commissioned to develop a signage system suited to the architecture of the new Charles de Gaulle Airport outside Paris; he designed a simple, clean, robust sans serif type that is highly legible. In 1976, Frutiger completed the family for the Stempel foundry.</history>
+	<family>Sans-serif</family>
+	<classification>Humanist</classification>
+	<copyright>Adobe, Linotype</copyright>
+	<usage>Despite its original intention as airport signage, Frutiger has a universal quality that makes it appropriate for many applications; a favorite typeface among advertising agencies, it is equally successful in text and display work.</usage>
+	<characteristics></characteristics>
+</font>
+
+<!-- ===== #15, Fleischmann ===== -->
+<font>
+	<name>Fleischmann</name>
+	<designer>Erhard Kaiser, Johann Fleischman</designer>
+	<date>1997</date>
+	<history>75 words</history>
+	<family>Serif</family>
+	<classification>Garalde</classification>
+	<copyright>Dutch Type Library</copyright>
+	<usage></usage>
+	<characteristics>A historically interesting letter is the "round r", which was already designated by Fleischmann; it is used after preceding round letters. Likewise interesting is the inventive form of the &-character</characteristics>
+</font>
+
+<!-- ===== #16, Bell Gothic ===== -->
+<font>
+	<name>Bell Gothic</name>
+	<designer>Chauncey H. Griffith</designer>
+	<date>1938</date>
+	<history>Before 1937, telephone books were printed in a variety of typefaces and consequently were often difficult to decipher. Because of his successful work on the legibility problems of newspaper typefaces, Chauncey H. Griffith was hired to develop a typeface that would compact enough to fit large amounts of information on a page while being legible at small sizes even when printed under less than desirable conditions.</history>
+	<family>Sans-serif</family>
+	<classification>Grotesque</classification>
+	<copyright>Adobe, Mergenthaler</copyright>
+	<usage>Besides as a clear and easy-to-read font, Bell Gothic is popular now for display and magazine advertising.</usage>
+	<characteristics></characteristics>
+</font>
+
+<!-- ===== #17, Trinité ===== -->
+<font>
+	<name>Trinité</name>
+	<designer>Bram de Does</designer>
+	<date>1982</date>
+	<history>75 words</history>
+	<family>Serif</family>
+	<classification>Realist</classification>
+	<copyright>The Enschedé Font Foundry</copyright>
+	<usage></usage>
+	<characteristics>The name 'Trinité' refers to the fact that the font family contains three variants, each with different lengths of ascenders and descenders.</characteristics>
+</font>
+
+<!-- ===== #18, Syntax ===== -->
+<font>
+	<name>Syntax</name>
+	<designer>Hans Eduard Meier</designer>
+	<date>1968</date>
+	<history>Designed by Hans Eduard Meyer for the Stempel foundry in 1968, Syntax is based on both Renaissance minuscule writing and Roman lapidary capitals.</history>
+	<family>Sans-serif</family>
+	<classification>Humanist</classification>
+	<copyright>Adobe, Linotype</copyright>
+	<usage>The design is a blend of a monoline sans serif with a more lively humanistic roman, resulting in a highly legible sans serif type with a wide range of uses, from captions and text to packaging and signage.</usage>
+	<characteristics></characteristics>
+</font>
+
+<!-- ===== #19, Baskerville ===== -->
+<font>
+	<name>Baskervile</name>
+	<designer>John Baskerville</designer>
+	<date>1754</date>
+	<history>British printer John Baskerville of Birmingham created the types that bear his name in about 1752. George Jones designed this version of Baskerville for Linotype-Hell in 1930, the International Typeface Corporation licensed it in 1982. An excellent text typeface, this Baskerville design has a delicacy and grace that come from long, elegant serifs and the subtle transfer of stroke weight from thick to very thin.</history>
+	<family>Serif</family>
+	<classification>Realist</classification>
+	<copyright>Adobe, ITC</copyright>
+	<usage>The high-contrast, sparkly look of ITC New Baskerville is well-suited to longer texts and display uses.</usage>
+	<characteristics></characteristics>
+</font>
+
+<!-- ===== #20, Meta ===== -->
+<font>
+	<name>Meta</name>
+	<designer>Erik Spiekermann</designer>
+	<date>1991</date>
+	<history>FF Meta is a humanist sans-serif typeface family designed by Erik Spiekermann originally as a commission for the Deutsche Bundespost (West German Post Office), but later released by Spiekermann himself in 1991. According to Spiekermann, Meta was intended to be a "complete antithesis of Helvetica," the latter which he found "boring and bland.". Throughout the nineties, Meta was embraced by the international design community with Spiekermann and E. M. Ginger writing that it had been dubiously praised as the "Helvetica of the 1990s".</history>
+	<family>Sans-serif</family>
+	<classification>Humanist</classification>
+	<copyright>FontFont</copyright>
+	<usage>FF Meta has been adopted by numerous corporations and other organizations as a corporate typeface, for signage or in their logo.</usage>
+	<characteristics></characteristics>
+</font>
+
+
+<font>
+	<name>Interstate</name>
+	<designer>Tobias Frere-Jones</designer>
+	<date>1993-1999</date>
+	<history>The typeface is closely related to the FHWA Series fonts, a signage alphabet drawn for the United States Federal Highway Administration in 1949.</history>
+	<family>Regular, Bold, Black, Extra, Hairline, Light, Mono, Pi, Thin, Ultra, Extralite</family>
+	<classification>Neo-grotesque</classification>
+	<copyright>Font Bureau</copyright>
+	<useage>Signage, text setting in print and on-screen</useage>
+	<characteristics>Wide spacing, terminals of ascending and descending strokes are cut at an angle to the stroke</characteristics>
+</font>
+
+<font>
+	<name>Myriad</name>
+	<designer>Robert Slimbach, Carol Twombly</designer>
+	<date>1992</date>
+	<history>The typeface is best-known for its usage by Apple Inc., replacing Apple Garamond as Apple's corporate font since 2002.</history>
+	<family>Sketch, Tilt, Condensed, Italic, Semibold, Semibold Italic, Bold, Bold Italic</family>
+	<classification>Humanist</classification>
+	<copyright>Adobe Type</copyright>
+	<useage>Text and display composition</useage>
+	<characteristics>Special "y" descender (tail) and slanting "e" cut</characteristics>
+</font>
+
+<font>
+	<name>Jenson</name>
+	<designer>Robert Slimbach</designer>
+	<date>1996</date>
+	<history>Its Roman styles are based on a Venetian oldstyle text face cut by Nicolas Jenson in 1470, and its italics are based on those by Ludovico Vicentino degli Arrighi.</history>
+	<family>Light, Light Italic, Regular, Italic, SemiBold, SemiBold Italic, Bold, Bold Italic, Light Subhead, Light Italic Subhead, Subhead, Italic Subhead, SemiBold Subhead, SemiBold Italic Subhead, Bold Subhead, Bold Italic Subhead, Light Caption, Light Italic Caption, Caption, Italic Caption, SemiBold Caption, SemiBold Italic Caption, Bold Caption, Bold Italic Caption, Light Display, Light Italic Display, Display, Italic Display, SemiBold Display, SemiBold Italic Display, Bold Display, Bold Italic Display</family>
+	<classification>Old style</classification>
+	<copyright>Adobe Type</copyright>
+	<useage>Appropriate for large amounts of text.</useage>
+	<characteristics>Organic, somewhat idiosyncratic font. Low x-height, and inconsistencies that help differentiate letters to make it a highly readable typeface.</characteristics>
+</font>
+
+<font>
+	<name>Griffo Classico</name>
+	<designer>Francesco Griffo, Franko Luin</designer>
+	<date>1993</date>
+	<history>Based on the roman and italic types cut by Francesco Griffo for the Venetian printer and publisher Aldo Manuzio at the end of the 15th century. The roman is from 1495, the first book using his italics was printed in 1501.</history>
+	<family>Italic, Bold Italic, Bold, Roman, Roman SC</family>
+	<classification>Old Style</classification>
+	<copyright>Omnibus Typografi</copyright>
+	<useage>Good choice for expressing classic beauty or formal tradition in typographical design and is generally held to be a good book face.</useage>
+	<characteristics>Small x-height with ascender height exceeding cap height. Angled top serifs on lower case letters. Short, bracketed serifs with cupped bases.</characteristics>
+</font>
+
+<font>
+	<name>Garamond Classico</name>
+	<designer>Claude Garamond, Jean Jannon</designer>
+	<date>1900</date>
+	<history>Opinion varies regarding the role of Claude Garamond (ca. 1480–1561) in the development of the Old Face font Garamond. What is accepted is the influence this font had on other typeface developments from the time of its creation to the present. Garamond, or Garamont, is related to the alphabet of Claude Garamond (1480–1561) as well as to the work of Jean Jannon (1580–1635 or 1658), much of which was attributed to Garamond.</history>
+	<family>Bold, Bold Italic, Italic, Roman, Roman SC</family>
+	<classification>Old Style</classification>
+	<copyright>Omnibus</copyright>
+	<useage>Most legible and readable serif typeface for print applications. It has also been noted to be one of the most eco-friendly major fonts when it comes to ink usage.</useage>
+	<characteristics>Fluid and consistent. Small bowl of the a and the small eye of the e. Long extenders and top serifs have a downward slope.</characteristics>
+</font>
+
+<font>
+	<name>Cheltenham</name>
+	<designer>Bertram Grosvenor Goodhue, Ingalls Kimball, Morris Fuller Benton</designer>
+	<date>1896</date>
+	<history>Designed in 1896 by Bertram Grosvenor Goodhue and Ingalls Kimball for use by a New York publisher, the Cheltenham Press. Six years later Morris Fuller Benton at American Type Founders (ATF) developed it into a final design and then the series. Cheltenham is not based on a single historical model, and shows influences of the Arts and Crafts Movement.</history>
+	<family>Book, Italic, Bold, Bold Headline, Bold Italic, Bold Italic Headline, Bold Condensed, Bold Condesned Italic, Bold Extra Condensed</family>
+	<classification>Clarendon Serif</classification>
+	<copyright>International Typeface Corporation</copyright>
+	<useage>Text setting. Print. Headlines.</useage>
+	<characteristics>Large x-height that adds to its legibility in text settings.</characteristics>
+</font>
+
+<font>
+	<name>Gutenberg B-42</name>
+	<designer>Johannes (Gensfleisch zur Laden zum) Gutenberg</designer>
+	<date>1452</date>
+	<history>The first moveable type used in Europe to print a book. Prior to this point, all European books had been hand lettered, with woodblock prints to reproduce drawings. Gutenberg's invention used his skills as a goldsmith, in conjunction with a new, non-traditional use for a wine press. The original type had no numerals as these were added after printing by a rubricator.</history>
+	<family>Regular</family>
+	<classification>Blackletter Textura</classification>
+	<copyright>Gutenberg founder and printer</copyright>
+	<useage>Religious and Devotional. Very rarely used.</useage>
+	<characteristics>Vertical stress and calligraphic serifs. Dark even letters.</characteristics>
+</font>
+
+<font>
+	<name>Gebetbuch Fraktur</name>
+	<designer>Dieter Steffmann</designer>
+	<date>1514</date>
+	<history>The first Fraktur font commissioned by Emperor Maximilian's magnificent prayer book. Other available types were too common or too antiquated. This Fraktur was based on drawings by Leonhard Wagner. The artistic quality and excellent workmanship stands up to GUtenberg's 42-line Bibles.</history>
+	<family>Regular</family>
+	<classification>Old English</classification>
+	<copyright>Typographer Mediengestaltung</copyright>
+	<useage>Religious and Devotional.</useage>
+	<characteristics>Variety of ligatures to aid typesetter. No distinction between the majuscules "I" and "J" even though the minuscules "i" and "j" are differentiated. Small-letter o, the left part of the bow is broken, but the right part is not.</characteristics>
+</font>
+
+
+<font>
+	<name>Helvetica</name>
+	<designer>Max Miedinger, Eduard Hoffman</designer>
+	<date>1957</date>
+	<history>Designed in 1957 by Max Miedinger and Eduard Hoffmann at the Haas'sche Schriftgiesserei in Münchenstein, Switzerland. Haas wanted to design a sans-serif typeface to rival the successfu Akzidenz-Grotesk. In 1960, the typeface's name was changed from Confoederatio Helvetica to Helvetica.</history>
+	<family>Sans-serif</family>
+	<classification></classification>
+	<copyright>Haas Typefoundry</copyright>
+	<useage>logos, government forms, signage</useage>
+	<characteristics></characteristics>
+</font>
+<font>
+	<name>Futura</name>
+	<designer>Paul Renner</designer>
+	<date>1927</date>
+	<history>Designed in 1927 by Paul Renner. It is based on geometric shapes that became representative visual elements of the Bauhaus design style. Commissioned by the Bauer type foundry. Renner believed that a modern typeface should express modern models, rather than be a revival of a previous design. The typeface is derived from simple geometric forms (near-perfect circles, triangles and squares) and is based on strokes of near-even weight, which are low in contrast.</history>
+	<family>Sans-serif</family>
+	<classification>Geometric sans-serif</classification>
+	<copyright>Linotype, ParaType</copyright>
+	<useage>headline, body</useage>
+	<characteristics></characteristics>
+</font>
+<font>
+	<name>Bodoni</name>
+	<designer>Giambattista Bodoni</designer>
+	<date>1798</date>
+	<history>Designed by Giambattista Bodoni in 1798. Bodon is based on Baskerville. Some digital versions of Bodoni are said to suffer from a particular kind of legibility degradation known as "dazzle" caused by the alternating thick and thin strokes.</history>
+	<family>Serif</family>
+	<classification>didone modern</classification>
+	<copyright></copyright>
+	<useage></useage>
+	<characteristics></characteristics>
+</font>
+<font>
+	<name>Univers</name>
+	<designer>Adrian Frutiger</designer>
+	<date>1957</date>
+	<history>Originally conceived and released by Deberny & Peignot in 1957. It was later folded into the D. Stempel AG and Linotype collection. Different weights and variations within the type family are designated by the use of numbers rather than names, a system since adopted by Frutiger for other type designs.Currently, Univers type family consists of 44 faces, with 16 uniquely numbered weight, width, position combinations. 20 fonts have oblique positions.</history>
+	<family>sans-serif</family>
+	<classification>Grotesque sans-serif</classification>
+	<copyright>Foundry 	Deberny & Peignot Linotype</copyright>
+	<useage>Very popular in 1960-1970. Used mainly for logos.</useage>
+	<characteristics></characteristics>
+</font>
+<font>
+	<name>Akzidenz-Grotesk</name>
+	<designer>Günter Gerhard Lange</designer>
+	<date>1898</date>
+	<history>Originally released by the H. Berthold AG type foundry in 1898. It was the first sans serif typeface to be widely used and influenced many later neo-grotesque typefaces. It inspired Max Miedinger to create Helvetica.</history>
+	<family>Sans-serif</family>
+	<classification>Grotesque sans-serif</classification>
+	<copyright>	H. Berthold AG</copyright>
+	<useage></useage>
+	<characteristics></characteristics>
+</font>
+<font>
+	<name>Garamond</name>
+	<designer>Claude Garamond, Jean Jannon</designer>
+	<date></date>
+	<history>Garamond is the name given to a group of old-style serif typefaces named for the punch-cutter Claude Garamond. Claude Garamond came to prominence in the 1540s, first for a Greek typeface he was commissioned to create for the French king Francis I. Garamond is considered to be among the most legible and readable serif typefaces for use in print. It is also one of the most eco-friendly fonts when it comes to ink usage.</history>
+	<family>Serif</family>
+	<classification>Old-style</classification>
+	<copyright></copyright>
+	<useage></useage>
+	<characteristics>small bowl of the a, the small eye of the e, Long extenders and top serifs have a downward slope</characteristics>
+</font>
+<font>
+	<name>Times</name>
+	<designer>Timothy Ketcher, Victor Lardent</designer>
+	<date>1931</date>
+	<history>Times New Roman is a serif typeface commissioned by the British newspaper The Times in 1931, created by Cameron Latham at the English branch of Monotype.[1] It was commissioned after Stanley Morison had written an article criticizing The Times for being badly printed and typographically behind the times.</history>
+	<family>Serif</family>
+	<classification>Transitional</classification>
+	<copyright>Monotype</copyright>
+	<useage></useage>
+	<characteristics></characteristics>
+</font>
+<font>
+	<name>Gill Sans</name>
+	<designer>Eric Gill</designer>
+	<date>1926</date>
+	<history>The original design appeared in 1926 when Douglas Cleverdon opened a bookshop in his home town of Bristol, where Eric Gill painted the fascia over the window in sans-serif capitals that would be later be known as Gill Sans. Gill further developed it into a complete font family after Stanley Morison commissioned its development. Gill was a well established sculptor, graphic artist and type designer, and the Gill Sans typeface takes inspiration from Edward Johnston's Johnston typeface for London Underground. It is distributed as a system font in Mac OS X and is bundled with certain versions of Microsoft products as Gill Sans MT.</history>
+	<family>Sans-serif</family>
+	<classification>Humanist</classification>
+	<copyright>Adobe Systems, ITC</copyright>
+	<useage></useage>
+	<characteristics></characteristics>
+</font>
+<font>
+	<name>Optima</name>
+	<designer>Hermann Zapf</designer>
+	<date>1952</date>
+	<history>Optima is a humanist sans-serif typeface designed by Hermann Zapf between 1952-1955 for the D. Stempel AG foundry, Frankfurt, Germany. Optima's design follows humanist lines, but its italic variant is merely an oblique, essentially a sloped roman without characteristic italic letterforms</history>
+	<family>Sans-serif</family>
+	<classification>Humanist</classification>
+	<copyright>Linotype</copyright>
+	<useage>Though classified as a sans-serif, Optima has a subtle swelling at the terminal producing a suggestion of a glyphic serif.</useage>
+	<characteristics></characteristics>
+</font>
+<font>
+	<name>Caslon</name>
+	<designer>William Caslon I</designer>
+	<date>1722</date>
+	<history>The Caslon types were distributed throughout the British Empire, including British North America. Much of the decayed appearance of early American printing is thought to be due to oxidation caused by long exposure to seawater during transport from England to the Americas. Caslon's types were immediately successful and used in many historic documents, including the U.S. Declaration of Independence.</history>
+	<family>Serif</family>
+	<classification>Transitional</classification>
+	<copyright>Caslon Type Foundry</copyright>
+	<useage></useage>
+	<characteristics></characteristics>
+</font>
+
+
+<font>
+		<name>The St. Augustin Civilité</name>
+		<designer>Robert Granjon</designer>
+		<date>1652</date>
+		<history>The Civilité is a form of script that flourished in northern Europe in the sixteenth century. The Civilité was originally used to render contracts, which explains the theatrical flourishes with which its lines are ended: like the trailing stroke written on a bank check, these gestures ensured that no additional terms could be added.</history>
+		<family>St Augustin Civilité</family>
+		<classification>Humanist Script</classification>
+		<copyright>Granjon founder and printer / Enschedé</copyright>
+		<usage>Print</usage>
+		<characteristics>warm, handmade</characteristics>
+		
+</font>
+<font>
+		<name>Breitkopf Fraktur</name>
+		<designer> Johann Gottlob Immanuel Breitkopf</designer>
+		<date>1793</date>
+		<history>Breitkopf Fraktur was designed by Johann Gottlob Immanuel Breitkopf (1719-1794), the well-known type designer and printer of Leipzig. Breitkopf's high reputation is based on a system of musical notes printing developed by him. 1793, in the final stage of his life, he designed this beautiful broken script named after himself.</history>
+		<family>Breitkopf Fraktur</family>
+		<classification>Black Letter</classification>
+		<copyright>ProFont</copyright>
+		<usage>Print</usage>
+		<characteristics>broken</characteristics>
+		
+</font>
+
+<font>
+		<name>Bickham Script</name>
+		<designer>Richard Lipton</designer>
+		<date>1997</date>
+		<history>Type designer and calligrapher Richard Lipton has further explored the design possibilities of this 18th century English round hand writing, instilling it with his distinctive design sensibility and a flawless execution. Recognized as a master designer of pointed-quill script typefaces, Lipton has created a traditional round hand typeface of unsurpassed elegance, virtuosity, and scope.</history>
+		<family>Bickham Script</family>
+		<classification>Script</classification>
+		<copyright>Adobe</copyright>
+		<usage>Print</usage>
+		<characteristics>Calligraph</characteristics>
+		
+</font>
+
+<font>
+		<name>Caecilia</name>
+		<designer>Peter M. Noordzij</designer>
+		<date>1990</date>
+		<history>PMN Caecilia™ is the premiere work of the Dutch designer Peter Matthias Noordzij. He made the first sketches for this slab serif design in 1983 during his third year of study in The Hague, and the full font family was released by Linotype in 1990. The PMN prefix represents the designer's initials, and Caecilia is his wife's name.</history>
+		<family>PMN Caecilia</family>
+		<classification>Serif/Slab-serif</classification>
+		<copyright>Linotype</copyright>
+		<usage>Print/Digital</usage>
+		<characteristics>combined classical ductus with his own contemporary expression to create a friendly and versatile slab serif family. With numerous weights from light to heavy, and styles including small caps, Old style figures, and Central European characters, PMN Caecilia has all the elements necessary for rich typographic expression.</characteristics>
+		
+</font>
+
+<font>
+		<name>Wilhelm Klingspor Gotisch</name>
+		<designer>Rudolf Koch</designer>
+		<date>1925</date>
+		<history>Koch, who was chief designer at Klingspor, named the font in honor of the foundry's co-owner. Koch was a remarkable calligrapher, artist, and designer.</history>
+		<family>Wilhelm Klingspor Gotisch</family>
+		<classification>Black Letter</classification>
+		<copyright>Linotype</copyright>
+		<usage>Print/Digital (Christmas greetings, certificates, wedding invitations, advertising, or music collateral pieces)</usage>
+		<characteristics>handsome, vigorous, and masterful</characteristics>
+		
+</font>
+
+<font>
+		<name>Weiss Roundgothic</name>
+		<designer>Emil Rudolf Weiss</designer>
+		<date>1936</date>
+		<history>The German designer Emil Rudolf Weiss originally created Weiss Rundgotisch for the Bauer typefoundry in 1937. In their catalog for the typeface, Bauer began with this quote from Leonhard Wagner: "The round gothic (rundgotisch) script is the most beautiful kind of script; she is called the mother and the queen of all the rest."</history>
+		<family>Weiss</family>
+		<classification>Black Letter</classification>
+		<copyright>Bauer Types</copyright>
+		<usage>Print/Digital (Logo)</usage>
+		<characteristics>Craft feeling/old-fashioned handwork</characteristics>
+		
+</font>
+
+<font>
+		<name>Info</name>
+		<designer>Erik Spiekermann</designer>
+		<date>1996</date>
+		<history></history>
+		<family>FF Info</family>
+		<classification>San Serif/Humanist</classification>
+		<copyright>FontFont</copyright>
+		<usage>Print/Digital (Logo/Display/Text)</usage>
+		<characteristics>Infomation</characteristics>
+		
+</font>
+
+<font>
+		<name>Specturm</name>
+		<designer>Jan van Krimpen</designer>
+		<date>1943</date>
+		<history>Spectrum is based on a design by Jan van Krimpen, who worked on his typeface from 1941 to 1943 for use in a Bible of the Spectrum publishing house in Utrecht. The bible project was later cancelled but the typeface was so beautifully formed and universal that the Monotype Corporation in London completed it. </history>
+		<family>Spectrum MT</family>
+		<classification>Serif</classification>
+		<copyright>Linotype</copyright>
+		<usage>Print/Digital (Logo/Display/Text)</usage>
+		<characteristics>The form of the lower case italic g is reminiscent of van Krimpen's italic for Lutetia and Romanée.</characteristics>
+		
+</font>
+
+
+<font>
+		<name>Proforma</name>
+		<designer>Petr van Blokland</designer>
+		<date>1968</date>
+		<history>In the mid-'80s, Petr van Blokland designed Proforma for Purup, a leading supplier of forms systems. Oldstyle structure provides essential copyfit and legibility, leading ATypI to award Petr the Charles Peignot prize for distinguished typographic achievement.</history>
+		<family>Proforma</family>
+		<classification>Serif</classification>
+		<copyright>Font Bureau</copyright>
+		<usage>Print/Digital (Logo/Display/Text)</usage>
+		<characteristics>With matching sans Productus, Proforma promises distinction in corporate design.</characteristics>
+		
+</font>
+
+
+<font>
+		<name>Amplitude</name>
+		<designer>Christian Schwartz</designer>
+		<date>2003</date>
+		<history>Fascinated by the visual aspects of these entirely functional compensations, Christian Schwartz designed Amplitude, an extensive sanserif series for text and display that turns function into style: deep angled cuts keep small sizes readable, while adding character at display sizes.</history>
+		<family>Amplitude</family>
+		<classification>San Serif</classification>
+		<copyright>Font Bureau</copyright>
+		<usage>Print/Digital (Logo/Display/Text)</usage>
+		<characteristics></characteristics>
+		
+</font>
+
+<font>
+		<name>The St. Augustin Civilité</name>
+		<designer>Robert Granjon</designer>
+		<date>1652</date>
+		<history>The Civilité is a form of script that flourished in northern Europe in the sixteenth century. The Civilité was originally used to render contracts, which explains the theatrical flourishes with which its lines are ended: like the trailing stroke written on a bank check, these gestures ensured that no additional terms could be added.</history>
+		<family>St Augustin Civilité</family>
+		<classification>Humanist Script</classification>
+		<copyright>Granjon founder and printer / Enschedé</copyright>
+		<usage>Print</usage>
+		<characteristics>warm, handmade</characteristics>
+		
+</font>
+<font>
+		<name>Breitkopf Fraktur</name>
+		<designer> Johann Gottlob Immanuel Breitkopf</designer>
+		<date>1793</date>
+		<history>Breitkopf Fraktur was designed by Johann Gottlob Immanuel Breitkopf (1719-1794), the well-known type designer and printer of Leipzig. Breitkopf's high reputation is based on a system of musical notes printing developed by him. 1793, in the final stage of his life, he designed this beautiful broken script named after himself.</history>
+		<family>Breitkopf Fraktur</family>
+		<classification>Black Letter</classification>
+		<copyright>ProFont</copyright>
+		<usage>Print</usage>
+		<characteristics>broken</characteristics>
+		
+</font>
+
+<font>
+		<name>Bickham Script</name>
+		<designer>Richard Lipton</designer>
+		<date>1997</date>
+		<history>Type designer and calligrapher Richard Lipton has further explored the design possibilities of this 18th century English round hand writing, instilling it with his distinctive design sensibility and a flawless execution. Recognized as a master designer of pointed-quill script typefaces, Lipton has created a traditional round hand typeface of unsurpassed elegance, virtuosity, and scope.</history>
+		<family>Bickham Script</family>
+		<classification>Script</classification>
+		<copyright>Adobe</copyright>
+		<usage>Print</usage>
+		<characteristics>Calligraph</characteristics>
+		
+</font>
+
+<font>
+		<name>Caecilia</name>
+		<designer>Peter M. Noordzij</designer>
+		<date>1990</date>
+		<history>PMN Caecilia™ is the premiere work of the Dutch designer Peter Matthias Noordzij. He made the first sketches for this slab serif design in 1983 during his third year of study in The Hague, and the full font family was released by Linotype in 1990. The PMN prefix represents the designer's initials, and Caecilia is his wife's name.</history>
+		<family>PMN Caecilia</family>
+		<classification>Serif/Slab-serif</classification>
+		<copyright>Linotype</copyright>
+		<usage>Print/Digital</usage>
+		<characteristics>combined classical ductus with his own contemporary expression to create a friendly and versatile slab serif family. With numerous weights from light to heavy, and styles including small caps, Old style figures, and Central European characters, PMN Caecilia has all the elements necessary for rich typographic expression.</characteristics>
+		
+</font>
+
+<font>
+		<name>Wilhelm Klingspor Gotisch</name>
+		<designer>Rudolf Koch</designer>
+		<date>1925</date>
+		<history>Koch, who was chief designer at Klingspor, named the font in honor of the foundry's co-owner. Koch was a remarkable calligrapher, artist, and designer.</history>
+		<family>Wilhelm Klingspor Gotisch</family>
+		<classification>Black Letter</classification>
+		<copyright>Linotype</copyright>
+		<usage>Print/Digital (Christmas greetings, certificates, wedding invitations, advertising, or music collateral pieces)</usage>
+		<characteristics>handsome, vigorous, and masterful</characteristics>
+		
+</font>
+
+<font>
+		<name>Weiss Roundgothic</name>
+		<designer>Emil Rudolf Weiss</designer>
+		<date>1936</date>
+		<history>The German designer Emil Rudolf Weiss originally created Weiss Rundgotisch for the Bauer typefoundry in 1937. In their catalog for the typeface, Bauer began with this quote from Leonhard Wagner: "The round gothic (rundgotisch) script is the most beautiful kind of script; she is called the mother and the queen of all the rest."</history>
+		<family>Weiss</family>
+		<classification>Black Letter</classification>
+		<copyright>Bauer Types</copyright>
+		<usage>Print/Digital (Logo)</usage>
+		<characteristics>Craft feeling/old-fashioned handwork</characteristics>
+		
+</font>
+
+<font>
+		<name>Info</name>
+		<designer>Erik Spiekermann</designer>
+		<date>1996</date>
+		<history></history>
+		<family>FF Info</family>
+		<classification>San Serif/Humanist</classification>
+		<copyright>FontFont</copyright>
+		<usage>Print/Digital (Logo/Display/Text)</usage>
+		<characteristics>Infomation</characteristics>
+		
+</font>
+
+<font>
+		<name>Specturm</name>
+		<designer>Jan van Krimpen</designer>
+		<date>1943</date>
+		<history>Spectrum is based on a design by Jan van Krimpen, who worked on his typeface from 1941 to 1943 for use in a Bible of the Spectrum publishing house in Utrecht. The bible project was later cancelled but the typeface was so beautifully formed and universal that the Monotype Corporation in London completed it. </history>
+		<family>Spectrum MT</family>
+		<classification>Serif</classification>
+		<copyright>Linotype</copyright>
+		<usage>Print/Digital (Logo/Display/Text)</usage>
+		<characteristics>The form of the lower case italic g is reminiscent of van Krimpen's italic for Lutetia and Romanée.</characteristics>
+		
+</font>
+
+
+<font>
+		<name>Proforma</name>
+		<designer>Petr van Blokland</designer>
+		<date>1968</date>
+		<history>In the mid-'80s, Petr van Blokland designed Proforma for Purup, a leading supplier of forms systems. Oldstyle structure provides essential copyfit and legibility, leading ATypI to award Petr the Charles Peignot prize for distinguished typographic achievement.</history>
+		<family>Proforma</family>
+		<classification>Serif</classification>
+		<copyright>Font Bureau</copyright>
+		<usage>Print/Digital (Logo/Display/Text)</usage>
+		<characteristics>With matching sans Productus, Proforma promises distinction in corporate design.</characteristics>
+		
+</font>
+
+
+<font>
+		<name>Amplitude</name>
+		<designer>Christian Schwartz</designer>
+		<date>2003</date>
+		<history>Fascinated by the visual aspects of these entirely functional compensations, Christian Schwartz designed Amplitude, an extensive sanserif series for text and display that turns function into style: deep angled cuts keep small sizes readable, while adding character at display sizes.</history>
+		<family>Amplitude</family>
+		<classification>San Serif</classification>
+		<copyright>Font Bureau</copyright>
+		<usage>Print/Digital (Logo/Display/Text)</usage>
+		<characteristics></characteristics>
+		
+</font>
+
+
+
+</type>

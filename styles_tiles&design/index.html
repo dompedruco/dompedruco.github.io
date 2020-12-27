@@ -1,0 +1,263 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Styles Tile & Stone</title>
+  <meta name="description" content="SlidesJS is a simple slideshow plugin for jQuery. Packed with a useful set of features to help novice and advanced developers alike create elegant and user-friendly slideshows.">
+  <meta name="author" content="Nathan Searles">
+
+  <!-- SlidesJS Required (if responsive): Sets the page width to the device width. -->
+  <meta name="viewport" content="width=device-width">
+ <link href='http://fonts.googleapis.com/css?family=Ubuntu' rel='stylesheet' type='text/css'>
+  <link href='http://fonts.googleapis.com/css?family=Alegreya:400,700' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" type="text/css" href="css/normalize.css">
+    <link rel="stylesheet" type="text/css" href="css/960.css">
+	 <script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
+     <script src="js/jquery.slides.min.js"></script>
+	<script type="text/javascript" src="http://code.jquery.com/jquery-1.7.2.min.js"></script>
+    	<script type="text/javascript" src="jquery-1.6.4.min.js"></script>
+		<script type="text/javascript" src="jquery-ui-1.8.16.custom.min.js"></script>
+    <script type="text/javascript">
+		$(document).ready(function(){
+			$("a.scroll-page").click(function(event){
+				event.preventDefault();
+				var offset = $( $(this).attr("href") ).offset().top; 
+				console.log("offset =" +offset); 
+				$("html, body").stop().animate({scrollTop:offset}, 400);
+			});
+			
+			$("div>a").click(function(event){
+				event.preventDefault();
+				$("html, body").stop().animate({scrollTop:0}, 400);
+			});
+			
+		});
+		
+	//THIS IS THE STICKY FOOTER 
+     $("#sticker").sticky({topSpacing:0});	
+	 
+    	//THIS IS THE SLIDE SHOW
+ $(function() {
+      $('#slides').slidesjs({
+        width: 960,
+        height: 800,
+        navigation: {
+          effect: "fade"
+        },
+        pagination: {
+          effect: "fade"
+        },
+        effect: {
+          fade: {
+            speed: 400
+          }
+        }
+      });
+    });
+    </script>
+	
+ 
+</head>
+<body>
+<header>
+<div id="sticker" class="navigation">
+<div id="nav" class="container_12">
+    <ul>
+        <li><a class="scroll-page" href="#a">home</a></li>
+        <li><a class="scroll-page" href="#b">showroom</a></li>
+        <li><a class="scroll-page" href="#c">products</a></li>
+         <li><a class="scroll-page" href="#d">contact us</a></li>
+        </ul>
+</div><!--closes nav--->
+ </div><!--closes navigation-->
+</header>
+
+
+ <div class="container_16">
+    <h1 id="logo">Styles tile & design</h1>
+    </div>
+    
+    
+
+
+  <div class="wrapper">  
+  <div class="fullwidth">
+    <div id="a" class="box">
+        
+    
+    	<div class="landing">
+     
+     <h4 class="container_12 ">Welcome to Styles, the Wine Country's finest tile and stone showroom!</h4>
+     
+     
+     <div class="headlinesummary">
+       <p class="container_12 grid_6 "> 
+
+Since 2001 our showroom has been serving the needs of San Francisco Bay Area clients, builders, architects and designers. We offer a wide selection of unique hand crafted tile, terracotta, mosaics, glass, natural stone and porcelain from around the world with choices ranging from traditional to contemporary and constantly introducing the latest in tile design.</p>
+ <p class="container_12 grid_6">
+Selecting the right tile or stone color, texture size and shape can be confusing.We are here to assist you in the best possible product selection to meet any budget. By giving special attention to each customer through hand-on design assistance, selecting the right tile or stone has never been more exiting. We are delighted to meet with you in our beautiful showroom to review your architectural plans and help you materialize your dreams.</p>
+</div><!--headline summary-->
+        </div>
+
+        
+    </div>
+  
+</div><!--closes fullwidth-->
+
+<!-------------- THIS IS THE SLIDE SHOW----------------->
+       <div id="b" class="box  container_16">
+ 
+        	<div id="slide-show">
+            
+            
+            
+			  <div id="slides">
+        	
+                 <img src="images/PICT03312.jpg"  >
+                <img src="images/3233.jpg" >
+                <img src="images/3537.jpg" >
+                <img src="images/last.jpg" >
+                	<!--<img src="images/P1040799.jpg"  >
+                    <img src="images/PICT0328.jpg"  >-->
+            
+                
+                
+        	</div><!--closes slides id-->
+            
+      
+           
+            
+            
+            
+          
+   </div><!--closes slide show-->
+    </div><!--closes box b-->
+    
+    
+    
+
+<!-------------- THIS IS THE VENDORS----------------->
+    <div id="c" class="box  container_16">
+    <h2>PRODUCTS</h2>
+   <p> Below is a list of website links to  vendors which products we represent in our showroom:</p>
+    <div class="vendors">
+    <ul class="pvendors">
+        <li><a href="http://www.akdo.com" target="blank">Akdo</a></li>
+         <li><a href="http://www.agorasurfaces.com" target="blank">Agora Natural Surfaces</a></li>
+         <li><a href="http://www.artistictile.com" target="blank">Artistic Tile</a></li>
+         <li><a href="http://www.ADEXUSA.com" target="blank">Adex USA</a></li>
+         <li><a href="http://www.mooremerkowitztile.com" target="blank">Moore Merkowitz</a></li>
+        <li><a href="http://www.ltsceramics.com" target="blank">LTS Meditranian Tile</a></li>
+        	<li><a href="http://www.beautifultiles.com" target="blank">Bronze Work Studio</a></li>
+         <li><a href="http://www.cosamarble.com" target="blank">Cosa Marble</a></li>
+         <li><a href="http://www.gbiquarrycollection.com" target="blank">Quarry Collection</a></li>
+         
+         <li><a href="http://www.echeguren.com" target="blank">Echeguren Slate</a></li>
+     </ul>
+     
+     <ul class="pvendors">
+    
+     <li><a href="http://www.azhotdots.com" target="blank">Arizona Hot Dots</a></li>
+     <li><a href="http://www.islandstone.com" target="blank">Island Stone</a></li>
+     <li><a href="http://www.tile-shop.com" target="blank">Tileshop</a></li>
+     <li><a href="http://www.fluxstudios.com" target="blank">Flux Studios</a></li>
+     <li><a href="http://www.originalstyle.com" target="blank">Original Style</a></li>
+     <li><a href="http://www.senecatiles.com" target="blank">Seneca Tile</a></li>
+     <li><a href="http://www.mcintyre-tile.com" target="blank">McIntyre Tile</a></li>
+     <li><a href="http://www.richardsandsterling.com" target="blank">Richards & Sterling</a></li>
+     <li><a href="http://www.glasstile.com" target="blank">Oceanside Glasstile</a></li>
+     </ul>
+     
+     <ul class="pvendors">
+   
+    <li><a href="http://www.latin-accents.com" target="blank">Latin Accents</a></li>
+    <li><a href="http://www.wholesaletile.biz" target="blank">Wholesale Tile by Aquay</a></li>
+    <li><a href="http://www.malibutile.com" target="blank">Malibu Tile</a></li>
+    <li><a href="http://www.solistone.com" target="blank">Solistone</a></li>
+   
+    <li><a href="http://www.walkerzanger.com" target="blank">Walker Zanger</a></li>
+  	<li><a href="http://mexicanhandcraftedtile.com" target="blank">California Art Tile</a></li>
+      	<li><a href="http://www.carmelimports.com" target="blank">Carmel Stone</a></li>
+        <li><a href="http://www.michellegriffoul.com" target="blank">Michelle Griffoul Studios</a></li>
+        <li><a href="http://www.fireclaytile.com" target="blank">Fireclay Tile</a></li>
+    </ul>
+    
+   </div><!--closes vendors-->
+    
+    </div>
+    
+    
+    
+ <!-------------- THIS IS THE CONTACT US----------------->
+     <div id="d" class="box  container_16">
+
+    <div class="summary push_8">
+    
+<iframe width="400" height="600" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.com/maps?f=q&amp;source=s_q&amp;hl=en&amp;geocode=&amp;q=75+Fremont+Drive+Sonoma,+CA+95476&amp;aq=&amp;sll=37.7577,-122.4376&amp;sspn=0.178603,0.360146&amp;ie=UTF8&amp;hq=&amp;hnear=75+Fremont+Dr,+Sonoma,+California+95476&amp;t=m&amp;ll=38.236562,-122.459278&amp;spn=0.026967,0.051413&amp;z=14&amp;iwloc=A&amp;output=embed"></iframe><br /><small><a href="https://maps.google.com/maps?f=q&amp;source=embed&amp;hl=en&amp;geocode=&amp;q=75+Fremont+Drive+Sonoma,+CA+95476&amp;aq=&amp;sll=37.7577,-122.4376&amp;sspn=0.178603,0.360146&amp;ie=UTF8&amp;hq=&amp;hnear=75+Fremont+Dr,+Sonoma,+California+95476&amp;t=m&amp;ll=38.236562,-122.459278&amp;spn=0.026967,0.051413&amp;z=14&amp;iwloc=A" style="color:white;text-align:left">View Larger Map</a></small>
+    </div><!--closes summary-->
+            
+    <div class="contactus push_1">
+    <h3>STYLES TILE & STONE</h3>
+    <p class="address">
+        75 Fremont Drive
+        Sonoma, CA 95476
+    </p>
+    
+    <p class="number">
+        Work: 707.996.7225<br/>
+        Fax:707.935.3804
+    </p>
+    
+      <p class="storehour">
+        Tuesday - Friday<br/>10.30 a.m. to 4.30 p.m.
+               <br/>Saturday <br/>11.00 a.m. to 4.00 p.m.
+    </p>
+    
+      <p class="email">
+        <a href="mailto:slavabgus@yahoo.com" target="_blank">slavabgus@yahoo.com</a>
+    </p>
+    
+
+    
+    </div>
+    
+  
+    
+    </div><!--closes box d-->
+    
+    
+    
+    <div class="bar2">
+    <div class="footer container_12">
+    
+   	<p> ©dominic pedrcuo <a href="http://dompedruco.com">dompedruco.com</a></p>
+    </div><!--closesfooter-->
+    
+    </div><!--closes bar-->
+ </div><!--wrapper-->
+    
+    
+    
+    
+
+  <!-- SlidesJS Required: Link to jQuery -->
+  <script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
+  <!-- End SlidesJS Required -->
+
+  <!-- SlidesJS Required: Link to jquery.slides.js -->
+  <script src="js/jquery.slides.min.js"></script>
+  <!-- End SlidesJS Required -->
+
+  <!-- SlidesJS Required: Initialize SlidesJS with a jQuery doc ready -->
+  <script>
+    $(function() {
+      $('#slides').slidesjs({
+        width: 960,
+        height: 800
+      });
+    });
+  </script>
+  <!-- End SlidesJS Required -->
+</body>
+</html>

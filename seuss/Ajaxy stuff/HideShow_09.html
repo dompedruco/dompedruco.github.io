@@ -1,0 +1,55 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Image Slideshow 2</title>
+<script type="text/javascript" src="jquery-1.4.2.min.js"></script>
+<script type="text/javascript">
+$(document).ready(function(){
+	$('#icons a img').css({opacity:.5}); 			// Preset the icons to 50% opacity
+	$('#icons a img').hover(function(){				// set up a hover for the icon
+		$(this).stop().animate({opacity:1}, 1000);	// on hover opacity 100%
+	},function(){
+		$(this).stop().animate({opacity:.5}, 1000);	// on out opacity 50%
+	});
+	
+	$('#icons a').click(function(event){
+		event.preventDefault();
+		var img_src = $(this).attr('href');
+		$('#images img').fadeOut(1000, function(){
+			$(this).attr({src:img_src});
+			$(this).fadeIn(1000);
+		});
+	});					   
+});
+</script>
+<style type="text/css">
+#images {
+	/* Here's a simple idea to cheat a progress bar into the system 
+	Here I've added an image into the background of the parent element
+	for the img. This will be behind the img. When the img is not visible 
+	we'll see loader.gif */
+	width:633px;				
+	height:500px;
+	background-image:url(images/loader.gif);
+	background-position:center;
+	background-repeat:no-repeat;	
+}
+
+#icons a img {
+	border:none;
+}
+#icons a {
+	outline:none;
+}
+</style>
+</head>
+<body>
+	<div id='wrap'>
+		<div id='images'> 
+        	<img src="images/Apple_Leaf.jpg" width="633" height="500"> 
+        </div>
+		<div id='icons'> <a href='images/Apple_Leaf.jpg' title="Apple Leaf"><img src="images/Apple_Leaf_icon.jpg" width="90" height="90"></a> <a href='images/Curl.jpg'  title="Curly Leaf"><img src="images/Curl_icon.jpg" width="90" height="90"></a> <a href='images/Dew-Drops-Green-Leaf-1.jpg'  title="Dew Drops"><img src="images/Dew-Drops-Green-Leaf-1_icon.jpg" width="90" height="90"></a> <a href='images/fall-leaf-01.jpg'  title="Fall Leaf"><img src="images/fall-leaf-01_icon.jpg" width="90" height="90"></a> </div>
+	</div>
+</body>
+</html>

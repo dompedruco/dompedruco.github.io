@@ -1,0 +1,353 @@
+/*   
+Theme Name: Web 3 Sectiopn 3 Theme Fall 2012
+Theme URI: http://newmedia.academyart.edu/~mhudson
+Description: Example Theme Fall 12 for section 3
+Author: Dominic Pedruco
+Author URI: http://dompedruco.com
+*/
+
+
+body{
+margin:0;
+background: url('images/texture.jpg') center center fixed no-repeat;
+font-family: 'Average Sans', sans-serif;
+background-color:#a78271;
+}
+
+
+
+/* *****************************************************************************
+* a,ul,tags,li, NAV
+******************************************************************************* */
+
+
+a{
+text-decoration:none;
+color:inherit;
+	
+}
+
+ul.tag{
+	margin-top: 10px;
+	width: 300px;
+	height: 22px;
+	background-repeat:no-repeat;
+	padding-left:20px;
+}
+
+
+ul.tag>li{
+	display:inline;
+	padding-left: 10px;}
+
+.post-body ul{
+list-style-type: none;
+	
+}
+
+
+li{
+	display:inline;
+	font-family: 'Average Sans', sans-serif;
+	font-size: 14px;
+	color:#666666;
+	padding-left:35px;
+	display:block;
+}
+
+li:nth-child(1){
+padding-left:0px;
+
+}
+
+.navigation{
+	margin-top:50px;
+	text-align:left;
+	background-color:#33051e;
+	padding-top:10px;
+	padding-bottom:10px;
+	margin-left:10px;
+}
+
+/********************* NEW MENU FOR PHP **********************/
+ul.menu{
+	text-align:left;
+	display:inline;
+}
+	
+ul.menu>li{
+	font-family: 'Average Sans', sans-serif;
+	font-size:16px;
+	color: white;
+	display:inline;
+}
+	
+ul.menu>li>a:hover{
+	color:#edbb6b;
+}
+
+ul.menu>li>a:visited{
+	color:#edbb6b;9
+}
+
+ul.menu{
+	text-align:left;
+	display:inline;
+}
+	
+	
+	
+	
+ul#nav_list>li{
+	font-family: 'Average Sans', sans-serif;
+	font-size:16px;
+	color: white;
+	display:inline;
+}
+	
+ul#nav_list>li>a:hover{
+	color:#edbb6b;
+}
+
+ul#nav_list>li>a:visited{
+	color:#edbb6b;9
+}
+
+/* *****************************************************************************
+* HEADER
+******************************************************************************* */
+
+
+
+#header{
+background-image:  url('images/headerimage.jpg');
+background-repeat:no-repeat;
+height:240px;
+
+}
+
+#content{
+margin-top:30px;
+}
+
+
+/* *****************************************************************************
+* POST
+******************************************************************************* */
+
+
+.post{
+background-color:#f4e9dc;
+padding:10px;
+margin-top:30px;
+padding-left:20px;
+padding-right:20px;
+}
+
+
+.post:nth-child(1){
+margin-top:0px;
+}
+
+
+/* *****************************************************************************
+* TYPOGRAPHY
+******************************************************************************* */
+
+h1{
+font-family: 'BenchNine', sans-serif;
+font-size: 49pt;
+color:#edbb6b;
+}
+
+#header>h1{
+text-align:right;
+	 	padding-top:115px;
+	 	padding-right:20px;
+		margin-top:0px;
+}
+	
+h2{
+font-family: 'BenchNine', sans-serif;
+font-size: 30pt;
+color:#edbb6b;
+margin-top:-5px;
+}
+
+h3{
+font-family: 'BenchNine', sans-serif;
+font-size: 28pt;
+color:#edbb6b;
+
+}
+
+
+h4{
+font-family: 'BenchNine', sans-serif;
+font-size: 25pt;
+color:#edbb6b;
+
+}
+
+h5{
+font-family: 'BenchNine', sans-serif;
+font-size: 20pt;
+color:#edbb6b;
+
+}
+
+h5{
+font-family: 'BenchNine', sans-serif;
+font-size: 15pt;
+color:#edbb6b;
+
+}
+
+h6{
+font-family: 'BenchNine', sans-serif;
+font-size: 11pt;
+color:#edbb6b;
+
+}
+
+
+p.post_time{
+	font-family: 'Average Sans', sans-serif;
+	font-size: 14pt;
+	color:#33051e;
+	padding-bottom:13px;
+	border-bottom-color:#edbb6b;
+	border-bottom-style:solid;
+	border-bottom-width:6px;
+}
+
+.post_content{
+	margin-top: 20px;
+	font-family: 'Average Sans', sans-serif;
+	color:#33051e;
+	font-size: 15px;
+	line-height:100%;
+}
+
+p.recent{
+	font-family: 'Average Sans', sans-serif;
+	font-size:15px;
+	padding-top:18px;
+	padding-left:50px;
+	color:33051e;
+	height:53px;
+	width:300px;
+	
+}
+	
+p.blog_description{
+	font-family: 'Average Sans', sans-serif;
+	font-size: 20px;
+	color:#edbb6b;
+	text-align:right;
+	margin-right:20px;
+	margin-top:-50px;
+}
+
+
+
+
+/* *****************************************************************************
+* BAR
+******************************************************************************* */
+
+#sidebar{
+background-color:#bfa789;
+margin-top:25px;
+background-image:  url('images/banner.jpg');
+background-repeat:no-repeat;
+width:300px;
+padding-bottom:2px;
+}
+
+#sidebar:nth-child(1){
+margin-top:30px;
+}
+
+
+
+.categories>p,.archives>p,.meta>li,.tags>p,.links>p{
+font-family: 'BenchNine', sans-serif;
+font-size:16pt;
+text-transform:uppercase;
+padding-left:20px;
+color:#edbb6b;
+width:300px;
+margin-bottom:5px;
+margin-top:0px;
+}
+
+
+
+.taglist{
+margin-top:10px;
+margin-left:10px;
+margin-bottom:10px;
+}
+	
+div.taglist>a {
+	font-size: 14pt !important;
+	font-family: 'Average Sans', sans-serif;
+	color:#33051e;
+	margin-left:5px;
+}
+
+.links>li{
+font-size:12pt;
+color:#33051e;
+padding-bottom:5px;
+}
+
+.categories>ul>li,.archives>ul>li{
+margin-left:-35px;
+color:#33051e;
+font-size:12pt;
+}
+
+.categories>ul>li:nth-child(1),.archives>ul>li:nth-child(1){
+padding-left:33px;
+}
+
+.archives>ul>li:nth-child(1){
+margin-left:-30px;
+}
+	
+div.taglist>a:nth-child(1){
+margin-left:10px;
+}
+
+
+.meta>ul>li>a{
+color:#33051e;
+font-size:14pt;
+margin-left:-10px;
+}
+
+
+.meta>ul>li>a:hover,div.taglist>a:hover,.categories>ul>li:hover,.archives>ul>li:hover,.links>li:hover{
+color:#edbb6b;
+}
+
+/* *****************************************************************************
+* FOOTER
+******************************************************************************* */
+
+.footer{
+color:#33051e;
+opacity:0.6;
+}
+
+/* *****************************************************************************
+* IMAGE ALIGN
+******************************************************************************* */
+img.alignright {float:right; margin:0 0 1em 1em}
+img.alignleft {float:left; margin:0 1em 1em 0}
+img.aligncenter {display: block; margin-left: auto; margin-right: auto}
+.alignright {float:right; }
+.alignleft {float:left; }
+.aligncenter {display: block; margin-left: auto; margin-right: auto}

@@ -1,0 +1,424 @@
+f* {
+	margin: 0;
+	padding: 0;
+	font-family: 'Helvetica Neue', arial, sans-serif;
+}
+
+
+.page-section h1 {
+	font-size: 130px;
+	margin-left:5px;
+	margin-top:215px ;
+	text-align: center;
+	color:white;
+	letter-spacing: 16px;
+	font-family: 'effra', arial, sans-serif;
+	font-weight:700;
+}
+
+
+.page-section p {
+font-weight:400;
+color:white;
+font-size:12pt;
+font-family: 'effra', arial, sans-serif;
+}
+
+footer{
+bottom:0;
+}
+
+.ftnav{
+width:445px;
+margin-top:40px;
+display:block;
+}
+
+footer>li{
+display:inline;
+float:left;
+}
+
+footer>li>a{
+display:block;
+width:100px;
+text-decoration:none;
+font-family: 'effra', arial, sans-serif;
+}
+
+b{
+font-weight:500;
+font-size:16pt;
+color:white;
+font-family: 'effra', arial, sans-serif;
+}
+
+h3{
+color:white;
+font-weight:600;
+font-size:18pt;
+font-family: 'effra', arial, sans-serif;
+letter-spacing:1px;
+}
+
+.nav{
+float:center;
+bottom:0 !important;
+line-style:none;
+margin:0;
+text-align:center;
+}
+
+.nav>li{
+display:inline;
+}
+
+.nav>li>a{
+float:left;
+color:white;
+text-transform:capitalize;
+bottom:0;
+display:inline-block;
+font-family: 'effra', arial, sans-serif;
+}
+
+.nav>li>a:nth-child(1):hover{
+background-color:#ed584d;
+}
+.nav>li>a:nth-child(2):hover{
+background-color:white;
+}
+.nav>li>a:nth-child(2):hover{
+background-color:white;
+}
+
+
+body{
+background:url('../images/bodybackground.jpg') fixed no-repeat;
+background-size:cover;
+}
+
+.center{
+margin-left:auto;
+margin-right:auto;
+}
+
+.line{
+height:180px;
+width:6px;
+background-color:white;
+margin-left:auto;
+margin-right:auto;
+}
+
+
+.line2{
+height:300px;
+width:6px;
+background-color:white;
+margin-left:auto;
+margin-right:auto;
+}
+
+.line3{
+height:300px;
+width:6px;
+background-color:white;
+margin-left:auto;
+margin-right:auto;
+margin-top:-68px;
+}
+
+.button{
+padding:6px;
+margin-top:100px;
+border: solid 6px white;
+width:200px;
+height:59px;
+text-align:center;
+text-transform:uppercase;
+color:white;
+display:block;
+letter-spacing:1px;
+font-size:18pt;
+}
+
+.button:hover{
+bottom:0;
+background-color:white;
+text-decoration:none;
+color:#f7433c;
+}
+
+.martop{
+margin-top:350px;
+}
+
+#whatiscolor{
+background-color:#ed584d;
+padding-bottom:40px;
+border-top: solid 6px white;
+	border-bottom:solid 6px white;
+}
+
+#percieved{
+background-color:#feb039;
+padding-bottom:40px;
+border-top: solid 6px white;
+	border-bottom:solid 6px white;
+}
+
+#reproduced{
+background-color:#8dd286;
+padding-bottom:40px;
+border-top: solid 6px white;
+	border-bottom:solid 6px white;
+}
+
+#limitations{
+background-color:#4b9ae4;
+padding-bottom:40px;
+border-top: solid 6px white;
+	border-bottom:solid 6px white;
+}
+
+#summary{
+background-color:#824b88;
+border-top: solid 6px white;
+position:relative;
+
+}
+
+.page-section#home {
+	background: url(../images/rainbow.jpg) bottom left no-repeat fixed;
+	background-size:cover;
+}
+
+.page-section {
+	width: 100%;
+	min-height: 630px;
+	padding:0;
+	position: relative;
+}
+
+.page-section h2 {
+	font-size: 3em;
+	font-weight: 900;
+	color: #fff;
+	margin-left:auto;
+	margin-right:auto;
+	margin-top:40px;
+	margin-bottom:50px;
+	text-align:center;
+	font-family: 'effra', arial, sans-serif;
+	font-weight:500;
+}
+
+
+.nextbutton{
+background: url(../images/nextbutton.svg) no-repeat;
+width:150px;
+height:92px;
+bottom:0;
+position:relative;
+margin-top:-28px;
+}
+.nextbutton:hover{
+background-position:bottom;
+}
+
+.buttontop{
+background: url(../images/backtotop-01.svg) no-repeat;
+width:150px;
+height:91px;
+bottom:0;
+position:relative;
+margin-top:-28px;
+background-position:top;
+}
+.buttontop:hover{
+background-position:bottom;
+}
+
+
+
+
+
+.page-section p.lead {
+	font-size: 1.8em;
+}
+
+
+
+@media only screen and (max-device-width: 800px), only screen and (device-width: 1024px) and (device-height: 600px), only screen and (width: 1280px) and (orientation: landscape), only screen and (device-width: 800px), only screen and (max-width: 767px) {
+.flex-video { padding-top: 0; }
+}
+
+
+@media (min-width: 768px) {
+	.header .navbar-brand {
+		padding-left: 0;
+	}
+	.navbar-nav {
+		float: right;
+	}
+
+
+}
+@media (max-width: 480px) {
+	
+	.page-section h2 {
+		font-size: 2em;
+	}
+	.page-section p {
+		font-size: 1.2em;
+	}
+#logo{
+margin-top:90px;
+}
+
+.page2{
+padding-top:20%;
+}
+
+.headline{
+font-family: 'Sanchez', serif;
+font-weight:400 !important;
+text-align:center;
+font-size:1.5em !important;
+margin-top:10px !important;
+color:#fff;
+margin-top:5px;
+	}
+	
+}
+
+
+/* Large desktop */
+@media (min-width: 1200px) {
+#mockup{
+background:url('../images/staging.jpg') no-repeat center top;	
+height:443px!important;
+width:100%;
+background-size:cover;
+}
+.page2{
+padding-top:8%;
+}
+p.hours1{
+font-family: 'Sanchez', serif;
+font-weight:400 !important;
+text-align:center;
+font-size:1em !important;
+color:#fff;
+display:block;
+}
+ }
+ 
+@media (min-width: 980px) and  (max-width: 1999px){
+p.hours1{
+font-family: 'Sanchez', serif;
+font-weight:400 !important;
+text-align:center;
+font-size:1em !important;
+color:#fff;
+display:block;
+}
+
+
+
+
+	
+#mockup{
+background:url('../images/staging_three_phones.jpg') no-repeat center top;	
+height:367px;
+width:100%;
+background-size:cover;
+}
+
+}
+ 
+/* Portrait tablet to landscape and desktop */
+@media (min-width: 768px) and (max-width: 979px) {
+
+
+
+#mockup{
+background:url('../images/staging_phone.png') no-repeat center top;	
+height:390px;
+width:100%;
+background-size:cover;
+}
+
+	
+#slideshow{
+margin-top:20%;
+}
+
+
+
+}
+ 
+/* Landscape phone to portrait tablet */
+@media (min-width: 481px) and (max-width: 767px) {
+.page-section#menu {
+height:250px !important;
+}
+	
+
+	
+#logo2>img{
+margin-left:0px;
+}
+
+#slideshow{
+margin-top:30%;
+}
+
+#mockup{
+margin-top:40px;
+}
+
+
+}
+ 
+/* Landscape phones and down */
+@media (max-width: 480px) { 
+.ftnav{
+width:320px;
+}
+
+.page-section h1{
+font-size:80px !important;
+}
+
+#logo2>img{
+margin-left:0px;
+}
+
+#slideshow{
+margin-top:45%;
+}
+
+.page-section #tablet{
+min-height:300px !important;
+}
+
+.page-section{
+background-size:auto !important;
+}
+
+.page-section:nth-child(5){
+min-height:500px !important;
+}
+
+.header4{
+margin-top:-35%;
+}
+
+#menu{
+padding-top:35%;
+}
+
+
+}

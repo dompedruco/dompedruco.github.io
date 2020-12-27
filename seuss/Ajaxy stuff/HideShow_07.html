@@ -1,0 +1,41 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Image Slideshow 2</title>
+<script type="text/javascript" src="jquery-1.4.2.min.js"></script>
+<script type="text/javascript">
+$(document).ready(function(){
+	// This time we'll fade out the current image. Then load the new image.
+	// To do this we need to save the src of the next image in a variable. 
+	// Declare this variable for that purpose.
+	var img_src;
+	
+	$('#icons a').click(function(event){
+		event.preventDefault();
+		img_src = $(this).attr('href');				// save the href to be used as src for the next image 
+		$('#images img').fadeOut(1000, function(){	// fade out the current image
+			$(this).attr({src:img_src});			// use a call back to set the src and 
+			$(this).fadeIn(1000);					// fade in the next image.
+		});											// The callback is executed after the fadeOut
+	});					   							// completes. 
+});
+// http://api.jquery.com/event.preventDefault/
+// http://api.jquery.com/attr/
+</script>
+</head>
+
+<body>
+	<div id='wrap'>
+    	<div id='images'>
+        	<img src="images/Apple_Leaf.jpg" width="633" height="500">
+        </div>
+        <div id='icons'>
+        	<a href='images/Apple_Leaf.jpg' title="Apple Leaf"><img src="images/Apple_Leaf_icon.jpg" width="90" height="90"></a>
+            <a href='images/Curl.jpg'  title="Curly Leaf"><img src="images/Curl_icon.jpg" width="90" height="90"></a>
+            <a href='images/Dew-Drops-Green-Leaf-1.jpg'  title="Dew Drops"><img src="images/Dew-Drops-Green-Leaf-1_icon.jpg" width="90" height="90"></a>
+            <a href='images/fall-leaf-01.jpg'  title="Fall Leaf"><img src="images/fall-leaf-01_icon.jpg" width="90" height="90"></a>
+        </div>
+    </div>
+</body>
+</html>

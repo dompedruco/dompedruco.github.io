@@ -1,0 +1,284 @@
+@charset "UTF-8";
+/* CSS Document */
+
+/***********FONT FACE***************/
+
+
+
+@font-face {
+    
+	
+	
+	
+	
+	font-family: 'TeXGyreAdventorBold';
+    src: url('assets/fonts/texgyreadventor-bold-webfont.otf');
+    src: url('assets/fonts/texgyreadventor-bold-webfont.eot?#iefix') format('embedded-opentype'),
+         url('assets/fonts/texgyreadventor-bold-webfont.otf') format('woff'),
+         url('assets/fonts/texgyreadventor-bold-webfont.otf') format('truetype'),
+         url('assets/fonts/texgyreadventor-bold-webfont.svg#TeXGyreAdventorBold') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+/**************/ 
+
+
+
+.wrap {
+	width:100%;	
+	margin:auto;
+	background-color:#EFEFEF;
+}
+
+
+
+
+.container{
+width:320px;
+margin: auto;	
+}
+
+
+#main>#main-nav>ul>li{
+margin-left:6px;
+position:relative;
+font-size:13.5pt;
+text-transform:uppercase;
+font-family: 'TeXGyreAdventorBold';
+
+}
+
+
+#main-nav{
+padding-left: 10px;
+
+}
+
+
+.showcase{
+width: 300px;
+length: 73px;
+font-size:10pt;
+text-transform:uppercase;
+float:right;
+padding:12px 0 12px 20px;
+margin-bottom: 50px;
+}
+
+
+.login{
+display: inline;
+height:50px;
+color: #FF5128;
+line-height: 50px;
+margin-left:200px;
+position:relative;
+}
+
+
+.backarrow{
+display:none;
+}
+
+.backarrow2{
+display:none;
+}
+/*********roll over***************/
+
+.galleryitem >.image{
+	width: 172;
+	height: 202;
+	overflow:hidden;
+	position: relative;
+}
+
+.galleryitem > .image > p {
+	position: absolute;
+	bottom: 0px;
+	margin: 0;
+	background: rgba(0,0,0,0.5);
+	padding: 5px 10px 5px 10px;
+	width: 172px;
+	-webkit-transition: 300ms;
+	-moz-transition: 300ms;
+	-o-transition: 300ms;
+	color: white;
+	font-size:10pt;
+}
+
+
+
+.galleryitem {
+	width: 172px;
+	height:289px;
+	background-color:#EFEFEF;
+	margin-left: 35px;
+	margin-top:30px;
+	padding: 20px 15px 0 15px;
+	float: left;
+}
+
+
+.galleryitem2 >.image{
+	width: 172;
+	height: 202;
+	overflow:hidden;
+	position: relative;
+}
+
+
+.galleryitem2 > .image > p {
+	position: absolute;
+	bottom: 0px;
+	margin: 0;
+	background: rgba(0,0,0,0.5);
+	padding: 5px 10px 5px 10px;
+	width: 172px;
+	-webkit-transition: 300ms;
+	-moz-transition: 300ms;
+	-o-transition: 300ms;
+	color: white;
+	font-size:10pt;
+}
+
+
+/**************** SPOT LIGHT ***************/
+
+.hide{
+display: none;
+}
+
+
+
+
+.headline{
+width: 280px;
+margin: 50px 0 0 20px;
+border-bottom: solid 3px #FF5128;
+padding-bottom:3px;
+padding-left: 2px;
+font-size:14pt;
+}
+
+
+
+.spotlight{ 
+width:273px;
+height: 350px;
+background-color: #3F5764;
+padding:0 24px 20px 24px;
+margin-left: 0px;
+}
+
+
+.categories{
+color:	#FF5128;
+font-size: 10pt;
+text-transform:lowercase;
+margin-top: 5px;
+}
+
+.categories>a{
+margin-top:5px;
+color:	#FF5128;
+style:none;	
+}
+
+
+
+author{
+color: #FF5128;
+}
+
+.author{
+margin-top:5px;
+padding-bottom: 30px;
+border-bottom: solid 2px #3F5764;
+}
+
+
+/*************** FILTER  ************/
+.filter{
+width: 273px;
+height: 2775px;
+background-color: #EFEFEF;
+margin-bottom: 50px;
+}
+
+.last{
+clear:right;
+}
+
+
+
+.galleryitem2{
+width: 172px;
+height:289px;
+background-color:#FF5128;
+margin-left: 60px;
+margin-top:30px;
+padding: 20px 15px 0 15px;
+float: left;
+}
+
+
+.pagenumber{
+float: right;
+margin-right:70px;
+margin-top: 20px;
+}
+
+.pagenumber>a{
+color:  #FF5128;
+text-decoration:none;
+margin-top: -10px;
+}
+
+author2{
+color: #EFEFEF;
+}
+
+.author2{
+margin-top:5px;
+padding-bottom: 30px;
+border-bottom: solid 2px #EFEFEF;
+}
+
+.categories2{
+color:	#EFEFEF;
+font-size: 10pt;
+text-transform:lowercase;
+margin-top: 5px;
+}
+
+.categories2>a{
+margin-top:5px;
+color:	#EFEFEF;
+style:none;	
+}
+
+.topfilter>ul{
+	position:relative;
+	top:-40px;
+	left:235px;
+}
+
+.topfilter>p{
+	position:relative;
+	top:-24px;
+	left:185px;
+	
+}
+
+
+/**
+
+#gallery {
+		
+}
+
+.gallery-item {
+		
+}

@@ -1,0 +1,177 @@
+@charset "UTF-8";
+/* CSS Document */
+
+/* *****************************************************************************
+* HTML RESETS
+******************************************************************************* */
+html, body, div, h1, h2, h3, h4, h5, h6, p, 
+blockquote, a, img, form, label, table, caption, 
+tbody, tfoot, thead, tr, th, td, article, 
+aside, figure, figcaption, footer, header, 
+nav, section{
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;	
+}
+body {
+	line-height: 1;
+}
+ol, ul { 
+	list-style: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+a{
+	text-decoration:none;
+}
+
+
+
+
+/*********************** @ FONT FACE STUFF ***********************/
+
+@font-face {
+    font-family: 'TeXGyreAdventorRegular';
+    src: url('assets/fonts/texgyreadventor-regular-webfont.otf');
+    src: url('assets/fonts/texgyreadventor-regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('assets/fonts/texgyreadventor-regular-webfont.otf') format('woff'),
+         url('assets/fonts/texgyreadventor-regular-webfont.otf') format('truetype'),
+         url('assets/fonts/texgyreadventor-regular-webfont.svg#TeXGyreAdventorRegular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+
+/*********************** BODY, UL, LI, MAIN NAV ***********************/
+
+
+
+ul, li {
+	list-style-type:none;
+	margin:0;
+	padding:0;
+	display: inline;
+}
+
+body {
+background-image: url('img/skin.png');
+
+
+ font-family: 'TeXGyreAdventorRegular', arial, helvetica;
+}
+
+h4{
+ font-family: 'TeXGyreAdventorRegular', arial, helvetica;
+ text-transform: uppercase;
+ font-size:18pt;
+ color: #FF5128;
+}
+
+.headline>a{
+ color: #FF5128;
+ width: 500px;
+}
+
+
+#main-nav{
+background-color:#FF5128;
+height:30px;
+font-size:24pt;
+padding-top:2px;
+font-family:'TeXGyreAdventorRegular', arial, helvetica;
+}
+
+#main-nav>ul>li> a{
+color:#EFEFEF;
+text-decoration:none;
+display:box;
+}
+
+
+#main-nav>ul>li> a:hover{
+color: #005CFF;
+}
+
+#logo{
+position:relative;
+line-height:10px;
+}
+
+.showcase{
+background-color: #3F5765;
+color: #EFEFEF;
+}
+
+a:hover, 
+a:focus { 
+color: #005CFF; 
+}
+
+
+a, 
+a:visited { 
+	line-height: inherit; /* links inherit their parent elements font size */
+} 
+
+ 
+
+a>.showcase:hover{
+	color:#FF5128;
+}
+
+.login>a{
+color:#FF5128;
+}
+
+.login>a:hover{
+color: #EFEFEF;
+}
+
+
+
+
+
+  
+  
+ .pagenumber>img{
+ top:3px;
+ position: relative;
+ padding-right:10px;
+ padding-left:10px;
+
+ }
+ 
+ .pagenumber> a{
+	 
+ font-size:15pt;
+ }
+ 
+
+/************ TOP FILTER **********/
+
+.topfilter{
+width: 500px;
+color:#FF5128;
+}
+
+.topfilter>ul{
+	display:inline;
+	color:#FF5128;
+}
+
+.topfilter>ul>li>a{
+color:#FF5128;
+}
+
+
+.topfilter>ul>li>a:hover{
+color: #005CFF;
+}

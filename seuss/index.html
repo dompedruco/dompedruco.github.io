@@ -1,0 +1,234 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+
+<title>Dr.Seuss Inspiration</title>
+	  <link href="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8/themes/base/jquery-ui.css" rel="stylesheet" type="text/css"/>
+      <link href='http://fonts.googleapis.com/css?family=Patrick+Hand+SC' rel='stylesheet' type='text/css'>
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.5/jquery.min.js"></script>
+  <script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8/jquery-ui.min.js"></script>
+  <script src="js/jquery.scrollorama.js"></script>
+
+
+  <script>
+
+<!---hide and show--->
+$(document).ready(function() {
+$(".stroke").hide();
+$(".clickquote").click(function(){
+  $(".stroke").show();
+});
+});
+
+
+
+<!--this is the bounce effect-->
+$(document).ready(function() {
+  var lockMouseover;
+  $(".box3").click(function(){
+    if( typeof lockMouseover == "undefined" ){
+     $(this).effect( "bounce", {times:3}, 300 );
+      lockMouseover = setTimeout( function(){ var un; lockMouseover = un;}, 950 );
+    }
+  });
+});
+
+
+
+<!--this is the menu stuff-->
+ 
+$(document).ready(function(){
+	$("a.scroll-page").click(function(event){
+				event.preventDefault();
+				var offset = $( $(this).attr("href") ).offset().top; 
+				console.log("offset =" +offset); 
+				$("html, body").stop().animate({scrollTop:offset}, 400);
+				  $(".box3").effect( "bounce", {times:3}, 300 );
+				  $(".stroke").hide();
+    		  
+	
+				//////////// LOOOK AT THIS!!!!!!!///////////http://stackoverflow.com/questions/3612557/improving-this-continuous-jquery-animation
+				$(".bounce2").effect("bounce", {times:2}, 450 );
+    			$(".quote").effect( "bounce", {times:2}, 450 );
+   });
+				
+			
+			$("div>a").click(function(event){
+				event.preventDefault();
+				$("html, body").stop().animate({scrollTop:0}, 400);
+				
+			});
+			<!---->
+			
+		});
+		
+<!------------- THIS IS THE FULL WIDTH STUFF-------->		
+$(document).ready(function () {
+    var $stretch = $(".box");
+
+    $stretch.animate({ height: $stretch.parent().height() }, 500 );
+});
+
+
+<!--this is the MOUSE OVER HOME PAGE stuff-->
+$(function() {
+    $("#homeimage")
+        .mouseover(function() { 
+            var src = $(this).attr("src").match(/[^\.]+/) + "over.gif";
+            $(this).attr("src", src);
+        })
+        .mouseout(function() {
+            var src = $(this).attr("src").replace("over.gif", ".gif");
+            $(this).attr("src", src);
+        });
+});
+		
+<!--scrollorama stuff LOOK INTO THIS-->
+$(document).ready(function() {
+    var scrollorama = $.scrollorama({
+        blocks:'.scrollblock'
+    });
+});
+
+$(document).ready(function() {
+	  var controller = $.superscrollorama();
+	  controller.addTween('#fade', 
+	    TweenMax.from($('#fade'), .5, {css:{opacity:0}}));
+	});
+
+<!--- STICKY FOOTER-->
+
+
+<!---hide and show--->
+
+</script>
+	
+
+
+<link rel="stylesheet" type="text/css" href="style.css" />
+</head>
+
+
+<body>
+
+
+<ul id="main-nav">
+	<li><a class="scroll-page" href="#a">1</a></li>
+  	<li><a class="scroll-page" href="#b">2</a></li>
+    <li><a class="scroll-page" href="#c">3</a></li>
+    <li><a class="scroll-page" href="#d">4</a></li>
+    <li><a class="scroll-page" href="#e">5</a></li>
+    <li><a class="scroll-page" href="#f">6</a></li>
+   <li> <a class="scroll-page" href="#g">7</a></li>
+ </ul>
+    
+<!-------------------HOME PAGE--------------->    
+<div id="wrapper">
+<div id="a" class="box">
+	<img id="fade" class="homequote"  src="img/headerimage2.png" />
+	<div id="homeimage"></div>
+</div>
+    
+    
+<!-------------------FIRST PAGE--------------->    
+<div id="b" class="box">
+
+<div class="clickquote">
+
+	<img class="quote" src="img/quote1-1-2.png" />
+    <img class="quote1 bounce2"  src="img/quote1-2-2.png" />
+</div>
+    <div class="clear"></div>
+     <img class="stroke1 stroke"  src="img/stroke1.png" />
+
+<div class="clear"></div>
+	<div class="boxcontainer">
+    	<div class="box3"><img src="img/lorax.png" /></div>
+    </div><!--closes containerdiv-->
+</div><!--closes box-->
+<!-------------------SECOND PAGE--------------->    
+<div id="c" class="box">
+
+<div class="clickquote">
+	<img class="quote" src="img/quote2-1-2.png" />
+    <img class="quote2 bounce2"  src="img/quote2-2-2.png" />
+</div>
+<img class="stroke2 stroke"  src="img/stroke2.png" />
+
+<div class="clear"></div>
+	<div class="boxcontainer">
+		<div class="box3"><img src="img/grinch.png" /></div>
+    </div><!--closes containerdiv-->
+</div>
+    
+<!-------------------THIRD PAGE--------------->  
+    
+<div id="d" class="box">
+
+<div class="clickquote">
+	<img class="quote" src="img/quote3-1-2.png" />
+    <img class="quote3 bounce2"  src="img/quote3-2-2.png" />
+</div>
+
+<img class="stroke3 stroke"  src="img/stroke3.png" />
+<div class="clear"></div>
+		<div class="boxcontainer">
+			<div class="box3"><img src="img/thing1.png" /></div>
+        </div><!--closes containerdiv-->
+</div>
+
+<!-------------------FOURTH PAGE--------------->  
+     
+<div id="e" class="box">
+
+<div class="clickquote">
+	<img class="quote" src="img/quote4-1-2.png" />
+    <img class="quote4 bounce2"  src="img/quote4-2-2.png" />
+</div>
+<img class="stroke4 stroke"  src="img/stroke4.png" />
+<div class="clear"></div>
+		<div class="boxcontainer">
+        	<div class="box3"><img src="img/greeneggs.png" /></div>
+        </div><!--closes containerdiv-->
+
+</div>
+
+<!-------------------FIFTH PAGE--------------->  
+    
+<div id="f" class="box">
+
+<div class="clickquote">
+	<img class="quote" src="img/quote5-1-2.png" />
+    <img class="quote5 bounce2"  src="img/quote5-2-2.png" />
+</div>
+<img class="stroke5 stroke"  src="img/stroke5.png" />
+<div class="clear"></div>
+		<div class="boxcontainer">
+		<div class="box3"><img src="img/fox.png" /></div>
+        </div><!--CLOSES BOXCONTAINER-->
+</div>
+
+
+<!-------------------SIXTH PAGE---------------> 
+
+<div id="g" class="box">
+
+<div class="clickquote">
+	<img class="quote" src="img/quote6-1-2.png" />
+    <img class="quote6 bounce2"  src="img/quote6-2-2.png" />
+</div>
+<img class="stroke6 stroke"  src="img/stroke6.png" />
+<div class="clear"></div>
+		
+        <div class="boxcontainer">
+        <div class="box3"><img src="img/hat.png" /></div>
+        </div><!--closes box container-->
+ <div class="bottom"><img src="img/dr.seuss.png" /></div>
+</div>
+
+
+</div><!--closes wrapper-->
+        
+</body>
+</html>

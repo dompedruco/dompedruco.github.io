@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<stuff>
+	<thing number='001'>
+		<p class='name'>Thing 1</p>
+		<p class='description'>Star Bellied Sneech</p>
+	</thing>
+	<thing>
+		<p class='name'>Thing 2</p>
+		<p class='description'>be working</p>
+	</thing>
+</stuff>

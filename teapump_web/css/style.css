@@ -1,0 +1,510 @@
+f* {
+	margin: 0;
+	padding: 0;
+	font-family: 'Helvetica Neue', arial, sans-serif;
+}
+.header {
+	position: fixed;
+	width: 100%;
+	background:url('../images/circle_texture.jpg');
+	z-index: 100;
+}
+
+.header2 {
+	position: absolute;
+	width: 100%;
+	background: #000;
+	height:50px;
+	background-color:#ffba7c;
+}
+
+.header3 {
+	position: absolute;
+	width: 100%;
+	background: #000;
+	height:50px;
+	background-color:#ed89b9;
+}
+
+.header4 {
+	position: absolute;
+	width: 100%;
+	background: #000;
+	height:50px;
+	background-color:#f6a3ff;
+}
+
+.headline{
+font-family: 'Sanchez', serif;
+font-weight:600 !important;
+text-align:center;
+font-size:1.7em !important;
+margin-top:7px !important;
+color:#fff;
+	}
+	
+.carousel-control.right{
+background-image:none !important;
+}
+	
+.carousel-control.left{
+background-image:none !important;
+}
+
+.navbar-header{
+z-index:20;
+}
+
+.header .navbar-brand {
+	font-weight: 900;
+}
+.header .navbar {
+	margin: 0;
+	border: none;
+	padding:0;
+}
+.page-section {
+	width: 100%;
+	min-height: 700px;
+	padding:0;
+}
+
+
+.page-section h1 {
+	font-size: 4em;
+	margin: 50px 0;
+}
+
+#logo2>img{
+margin: 0 auto;
+position:absolute;
+margin-top:-12px;
+width:86px;
+margin-left:15px;
+}
+
+
+#logo{
+margin: 0 auto;
+margin-top:150px;
+}
+
+
+button#nav-toggle.navbar-toggle{
+border-color:#f35749 !important;	
+}
+.navbar-inverse .navbar-nav:hover{
+border-color:rgba(131, 178, 172);
+}
+
+.navbar-inverse .navbar-nav>li>a{
+color:#f35749;	
+}
+
+.navbar-inverse .navbar-nav>li>a:hover{
+background-color:rgba(131, 178, 172,0.8);
+color:#fff;
+}
+
+.page-section h1 span {
+	font-weight: 200;
+}
+.page-section h2 {
+	font-size: 3em;
+	font-weight: 900;
+	color: #fff;
+	margin: 0 0 30px;
+	text-shadow: 2px 2px 2px #000;
+}
+.page-section p {
+	font-size: 1.1em;
+	font-weight: 200;
+	margin: 0 10% 20px 10%;
+	font-family: 'Sanchez', serif;
+}
+.page-section p.lead {
+	font-size: 1.8em;
+}
+.page-section p.caption {
+	color: #fff;
+	padding: 20px;
+	text-shadow: 1px 1px 2px #000;
+	font-size: 1.7em;
+	font-family: 'Sanchez', serif;
+	font-weight:300;
+	text-align:center;
+}
+
+.page-section#home {
+	background: url(../images/background_cover2.jpg) bottom left no-repeat fixed;
+	background-size:cover;
+}
+.page-section#application {
+	background: url(../images/ricepaper.png) repeat;
+	min-height:600px !important;
+}
+
+
+.page-section#tablet {
+	background: url(../images/background_order.jpg) left center no-repeat fixed;
+	background-size:cover;
+}
+.page-section#menu {
+	background: url(../images/background-tablet.jpg) top center no-repeat fixed;
+	background-size:cover;
+}
+
+.page-section#menu>.container {
+	position:relative;
+}
+
+.page-section#contactus{
+min-height:60px !important;
+background-color:#F35749;
+}
+
+
+.btn {
+	font-weight: 200;
+}
+.btn-dark {
+	background: #444;
+	color: #fff;
+}
+.btn-dark:hover {
+	background: #000;
+	color: #fff;
+}
+.back-to-top {
+	display: inline-block;
+	clear: both;
+	background: #fff;
+	color: #333;
+	padding: 0 10px 5px;
+	margin: 20px 0 0;
+	text-shadow: none;
+}
+.back-to-top:hover {
+	background: #333;
+	color: #fff;
+	text-decoration: none;
+}
+hr {border-color: #ddd;}
+
+/**************** PAGE TWO  ***************/
+.page2{
+padding-top:12%;
+
+}
+
+
+
+/**************** FLEX VIDEO ***************/
+
+#mockup{
+background:url('../images/staging_phone.png') no-repeat center top;	
+height:390px;
+width:100%;
+background-size:cover;
+}
+
+.flex-video {
+position: relative;
+padding-top: 25px;
+padding-bottom: 67.5%;
+height: 0;
+margin-bottom: 16px;
+overflow: hidden;
+}
+ 
+.flex-video.widescreen { padding-bottom: 57.25%; }
+.flex-video.vimeo { padding-top: 0; }
+ 
+.flex-video iframe,
+.flex-video object,
+.flex-video embed {
+position: absolute;
+top: 0;
+left: 0;
+width: 100%;
+height: 100%;
+}
+
+/**************** PAGE 3 ***************/
+#slideshow{
+margin-top:14%;
+}
+
+.carousel-inner >.item > img{
+margin:auto;
+width:600px;
+}
+
+
+
+/**************** MENU ***************/
+.caption_lb{
+font-family: 'Sanchez', serif;
+font-weight:400 !important;
+text-align:center;
+font-size:1.5em !important;
+margin-top:10px !important;
+color:#f75a4b;
+
+}
+
+.clickmenu{
+padding-top:20%;
+}
+
+.orient_waves{
+background:url('../images/bottom_waves.png') no-repeat left top;
+height:150px;
+width:100%;
+z-index:10;	
+margin-top:-150px !important;
+}
+@media (min-width: 1564px) {
+.orient_waves{
+background-size:cover;
+}
+}
+
+
+/**************** contact us ***************/
+.aboutme{
+font-family: 'Sanchez', serif;
+font-weight:400 !important;
+text-align:center;
+font-size:1.5em !important;
+margin-top:10px !important;
+color:#fff;
+}
+
+p.hours1{
+font-family: 'Sanchez', serif;
+font-weight:400 !important;
+text-align:center;
+font-size:1em !important;
+color:#fff;
+display:block;
+margiht-right:0;
+}
+
+.hours-margin{
+margin:20px auto;
+}
+	
+
+/**************** OVERWRITING BOOTSTRAP ***************/
+
+.carousel-indicators .active{
+background-color:#fff;
+width:14px;
+height:14px;
+}
+
+.carousel-indicators li{
+border: 1px solid #fff;
+width:12px;
+height:12px;
+margin:2px;
+}
+
+.navbar-inverse .navbar-nav>li>a{
+font-size:1.2em;
+}
+
+
+.carousel-indicators{
+bottom: -40px;
+}
+	
+.carousel-control .glyphicon-chevron-left{
+left:30%;
+}
+
+.carousel-control .glyphicon-chevron-right{
+left:56%;
+}
+
+
+
+@media only screen and (max-device-width: 800px), only screen and (device-width: 1024px) and (device-height: 600px), only screen and (width: 1280px) and (orientation: landscape), only screen and (device-width: 800px), only screen and (max-width: 767px) {
+.flex-video { padding-top: 0; }
+}
+
+
+@media (min-width: 768px) {
+	.header .navbar-brand {
+		padding-left: 0;
+	}
+	.navbar-nav {
+		float: right;
+	}
+
+
+}
+@media (max-width: 480px) {
+	.page-section h1 {
+		font-size: 3em;
+	}
+	.page-section h2 {
+		font-size: 2em;
+	}
+	.page-section p {
+		font-size: 1.2em;
+		margin: 0 0 20px;
+	}
+#logo{
+margin-top:90px;
+}
+
+.page2{
+padding-top:20%;
+}
+
+.headline{
+font-family: 'Sanchez', serif;
+font-weight:400 !important;
+text-align:center;
+font-size:1.5em !important;
+margin-top:10px !important;
+color:#fff;
+margin-top:5px;
+	}
+	
+}
+
+
+/* Large desktop */
+@media (min-width: 1200px) {
+#mockup{
+background:url('../images/staging.jpg') no-repeat center top;	
+height:443px!important;
+width:100%;
+background-size:cover;
+}
+.page2{
+padding-top:8%;
+}
+p.hours1{
+font-family: 'Sanchez', serif;
+font-weight:400 !important;
+text-align:center;
+font-size:1em !important;
+color:#fff;
+display:block;
+}
+ }
+ 
+@media (min-width: 980px) and  (max-width: 1999px){
+p.hours1{
+font-family: 'Sanchez', serif;
+font-weight:400 !important;
+text-align:center;
+font-size:1em !important;
+color:#fff;
+display:block;
+}
+
+
+
+
+	
+#mockup{
+background:url('../images/staging_three_phones.jpg') no-repeat center top;	
+height:367px;
+width:100%;
+background-size:cover;
+}
+
+}
+ 
+/* Portrait tablet to landscape and desktop */
+@media (min-width: 768px) and (max-width: 979px) {
+
+
+
+#mockup{
+background:url('../images/staging_phone.png') no-repeat center top;	
+height:390px;
+width:100%;
+background-size:cover;
+}
+
+	
+#slideshow{
+margin-top:20%;
+}
+
+
+
+}
+ 
+/* Landscape phone to portrait tablet */
+@media (min-width: 481px) and (max-width: 767px) {
+.page-section#menu {
+height:250px !important;
+}
+	
+
+	
+#logo2>img{
+margin-left:0px;
+}
+
+#slideshow{
+margin-top:30%;
+}
+
+#mockup{
+margin-top:40px;
+}
+
+
+}
+ 
+/* Landscape phones and down */
+@media (max-width: 480px) { 
+
+#logo2>img{
+margin-left:0px;
+}
+
+.page-section#home {
+	background: url(../images/background_cover2.jpg) top left no-repeat fixed;
+	background-size:auto;
+}
+
+.page-section#tablet {
+	background: url(../images/background_order.jpg) bottom left no-repeat fixed;
+	background-size:auto;
+}
+
+#slideshow{
+margin-top:45%;
+}
+
+.page-section #tablet{
+min-height:300px !important;
+}
+
+.page-section{
+min-height:600px !important;
+}
+
+.page-section:nth-child(5){
+min-height:500px !important;
+}
+
+.header4{
+margin-top:-35%;
+}
+
+#menu{
+padding-top:35%;
+}
+
+
+}

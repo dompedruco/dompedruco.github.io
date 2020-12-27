@@ -1,0 +1,62 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Image Slideshow 11 - JQuery Load event</title>
+<script type="text/javascript" src="jquery-1.4.2.min.js"></script>
+<script type="text/javascript">
+$(document).ready(function(){	// Wait for document to load
+	// Assign a click event to each of the links
+	$('#icons a').click(function(event){
+		// stop any animation, then animate opacity to 1 and siblings to opacity 0.
+		$(this).stop().animate({opacity:1.0}).siblings().stop().animate({opacity:0.5});
+		// Prevent the default behavior of links
+		event.preventDefault();
+		// Get the url to the next image to load from the href of this anchor
+		var img_src = $(this).attr('href');
+		// Fade out the current image. When this is complete load the next image.
+		$('#images img').fadeOut(1000, function(){
+			// Set the next image to load, and add a load event. 
+			$(this).attr({src:img_src}).load( function(){
+				$(this).fadeIn(1000);			// When loaded fade in. 
+				console.log( "image loaded" );	// Log a message for fun. 
+			} );
+			
+		});
+	}).css({opacity:0.5}).eq(0).css({opacity:1.0});	// Set the initial state for the links. 			   
+});
+</script>
+<style type="text/css">
+#images {
+	/* Here's a simple idea to cheat a progress bar into the system 
+	Here I've added an image into the background of the parent element
+	for the img. This will be behind the img. When the img is not visible 
+	we'll see loader.gif */
+	width:633px;				
+	height:500px;
+	background-image:url(images/loader.gif);
+	background-position:center;
+	background-repeat:no-repeat;	
+}
+
+#icons a img {
+	border:none;
+}
+#icons a {
+	outline:none;
+}
+</style>
+</head>
+<body>
+	<div id='wrap'>
+		<div id='images'> 
+        	<img src="images/Apple_Leaf.jpg" width="633" height="500"> 
+        </div>
+		<div id='icons'> 
+            <a href='images/Apple_Leaf.jpg' title="Apple Leaf"><img src="images/Apple_Leaf_icon.jpg" width="90" height="90"></a> 
+            <a href='images/Curl.jpg'  title="Curly Leaf"><img src="images/Curl_icon.jpg" width="90" height="90"></a> 
+            <a href='images/Dew-Drops-Green-Leaf-1.jpg'  title="Dew Drops"><img src="images/Dew-Drops-Green-Leaf-1_icon.jpg" width="90" height="90"></a> 
+            <a href='images/fall-leaf-01.jpg'  title="Fall Leaf"><img src="images/fall-leaf-01_icon.jpg" width="90" height="90"></a> </div>
+        </div>
+</body>
+</html>

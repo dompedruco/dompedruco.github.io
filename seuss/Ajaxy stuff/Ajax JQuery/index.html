@@ -1,0 +1,43 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>Untitled Document</title>
+<!-- import jquery -->
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript">
+// Wait for document to load
+$(document).ready( function () {
+	// Use get to load stuff.xml, the function is called when the file has finsihed loading
+	
+	/*hello.txt = <p>Hello World</p>
+	
+	$.get("hello.txt",callback);
+	
+	function callback(data) {
+		// data = <p>Hello World</p>
+		$(data).addClass('red');
+		$("body").append( data )
+	}*/
+	
+	$.get( 'stuff.xml', function( data ) { 
+		$(data).find('thing').each(function(){
+			// $("body").append($(this));
+			// $("body").append($(this).find('.name'));
+			// $("body").append($(this).find('.description'));
+			
+			// $('h1').html($(this).find('.name'));
+		});	
+		
+		$('h1').html( "<em>"+$(data).find('thing').eq(0).find('.name').text()+"</em>" );
+		$('body').append("<h2>" + $(data).find('thing').eq(0).attr('number') + "</h2>");
+		$('body').append($(data).find('thing').eq(0).find('p.description'));
+	}) 
+});
+</script>
+</head>
+
+<body>
+	<h1>***********</h1>
+</body>
+</html>
