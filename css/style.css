@@ -861,6 +861,10 @@ nav#filter a {
 }
 
 /***************** TRANSITIONS FOR PORTFOLIO***************/
+#opentable{
+		background-color:#EF7979;
+}
+
 #shipt{
 	background-color:#6DC375;
 }
@@ -872,12 +876,12 @@ nav#filter a {
 	background-color:#7DC2CC;
 }
 
-#musicpix{
+<!--#musicpix{
 	background-color:#F3B563;
-}
+}-->
 
 #logos{
-	background-color:#EF7979;
+	background-color:#D995A9;
 }
 
 .portfolio-item {
@@ -1020,7 +1024,6 @@ section#footer {
 .social{
 	list-style-type:none;
 	width:250px;
-	margin-left:-20px;
 }
 .social>li{
 	display:block;
@@ -1232,6 +1235,8 @@ Media queries
 .splash_img{
 	display:none;
 }
+
+
 .splash_img_mobile{
 	opacity:0.3;
 	height:600px;
@@ -1242,7 +1247,9 @@ Media queries
 	overflow:hidden;
 	width:80%;
 }
-
+.decor1>img{
+	z-index: 1000;
+}	
 .project-items{
 	height:250px;
 	padding-top:20px;
@@ -1279,6 +1286,7 @@ h2.display_title{
 }
 
 @media (max-width: 767px) {
+
 .header_img{
 	display:none;
 }
