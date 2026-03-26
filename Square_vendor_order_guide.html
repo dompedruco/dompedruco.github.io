@@ -1,0 +1,608 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<title>Square - AI Powered Order Guide | Dominic A. Pedruco</title>
+<meta name="description" content="Square Vendor Order Guide - AI-powered vendor price comparison tool for restaurants">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="css/bootstrap.css">
+<link rel="stylesheet" href="css/master.css">
+<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="css/swipebox.css">
+<link href="img/favicon.png" rel="icon" type="image/png" />
+<link href="https://fonts.googleapis.com/css?family=Work+Sans:400,600" rel="stylesheet">
+<style>
+  #password-gate { display: none; min-height: 100vh; background: #404040; padding: 60px 20px; text-align: center; flex-direction: column; align-items: center; justify-content: center; }
+  #password-gate .gate-thumb { margin-bottom: 24px; }
+  #password-gate .gate-thumb img { max-width: 320px; width: 100%; border-radius: 8px; }
+  #password-gate h2 { color: #fff; font-size: 22px; font-weight: 600; margin-bottom: 20px; }
+  #password-gate #password-form { margin-bottom: 10px; }
+  #password-gate #password-input { padding: 12px 20px; width: 280px; max-width: 100%; border: 1px solid rgba(255,255,255,0.4); border-radius: 6px; background: rgba(255,255,255,0.1); color: #fff; font-size: 16px; }
+  #password-gate #password-input::placeholder { color: rgba(255,255,255,0.5); }
+  #password-gate .error { color: #ff6b6b; margin-top: 8px; font-size: 14px; }
+  #password-gate .gate-back { margin-top: 24px; }
+  #password-gate .gate-back a { color: rgba(255,255,255,0.9); text-decoration: underline; }
+  #password-gate .gate-back a:hover { color: #fff; }
+  .square-section-title { font-size: 22px; font-weight: 600; text-transform: uppercase; letter-spacing: 1px; margin: 60px 0 20px; color: #474B51; border-bottom: 2px solid #7DCC93; padding-bottom: 10px; display: inline-block; }
+  .square-dark-bg { background: #404040; padding: 60px 0; }
+  .square-dark-bg h3, .square-dark-bg p { color: #fff; }
+  .square-dark-bg .color_green { color: #7DCC93; }
+  .square-concept-wrapper { position: relative; }
+  .square-concept-wrapper .computer-frame { position: relative; display: inline-block; }
+  .square-concept-wrapper .concept-gif { position: absolute; top: 8%; left: 50%; transform: translateX(-50%); max-width: 78%; max-height: 65%; object-fit: contain; }
+  .square-overlay-box { position: absolute; right: 5%; top: 50%; transform: translateY(-50%); max-width: 320px; padding: 24px; background: rgba(255,255,255,0.95); border-radius: 8px; box-shadow: 0 4px 20px rgba(0,0,0,0.15); }
+  .square-impact-stat { font-size: 72px; font-weight: 700; color: #7DCC93; line-height: 1; margin: 20px 0; }
+  .square-intro-line { background-color: #A9DFBF; }
+  .square-business-context-inner{
+    width: 100%;
+    max-width: 750px;
+    margin: 0;
+  }
+  /* Quote section */
+  #square_quotes{
+    background: url('img/square/cooking_background_img.png') center center no-repeat;
+    background-size: cover;
+    height: 348px;
+    overflow: hidden;
+  }
+  #square_quotes .container{
+    height: 100%;
+  }
+  #square_quotes .square-quotes-inner{
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 54px;
+  }
+  #square_quotes .square-quote-percent{
+    width: 290px;
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+  }
+  #square_quotes .square-percent-box{
+    border: 1px solid rgba(255,255,255,0.75);
+    border-radius: 14px;
+    padding: 22px 14px 18px 14px;
+    color: #ffffff;
+    background: rgba(0,0,0,0.15);
+    text-align: center;
+  }
+  #square_quotes .square-percent-big{
+    font-size: 44px;
+    font-weight: 700;
+    line-height: 1;
+  }
+  #square_quotes .square-percent-small{
+    margin-top: 8px;
+    font-size: 12px;
+    line-height: 14px;
+    font-weight: 400;
+    opacity: 0.85;
+  }
+  #square_quotes .square-quote-cards img{
+    max-width: 540px;
+    width: 100%;
+    height: auto;
+    display: block;
+  }
+  @media (max-width: 991px){
+    #square_quotes{
+      height: auto;
+      min-height: 348px;
+      padding: 30px 0;
+    }
+    #square_quotes .square-quotes-inner{
+      flex-direction: column;
+      gap: 18px;
+    }
+    /* Onboarding concept: hide static concept PNG on tablet */
+    .square-empty-static{
+      display:none !important;
+    }
+    /* Onboarding concept: remove outline on tablet */
+    .square-computer-outline{
+      display:none !important;
+    }
+    /* Onboarding concept GIF: center + fixed width */
+    .square-empty-gif{
+      right:auto !important;
+      left:50% !important;
+      top:50% !important;
+      transform:translate(-50%,-50%) !important;
+      width:380px !important;
+      max-width:90% !important;
+      height:auto !important;
+    }
+    .square-onboarding-canvas{
+      height:400px !important;
+      padding:24px 0 !important;
+    }
+  }
+  @media (max-width: 767px) {
+    .square-overlay-box { position: static !important; margin: 20px 0 !important; max-width: 100% !important; transform: none !important; }
+    .square-impact-stat { font-size: 48px; }
+    /* Onboarding concept GIF: keep centered on mobile */
+    .square-empty-gif{
+      right:auto !important;
+      left:50% !important;
+      top:50% !important;
+      transform:translate(-50%,-50%) !important;
+      width:380px !important;
+      max-width:90% !important;
+      height:auto !important;
+    }
+    /* Onboarding concept: remove outline on mobile */
+    .square-computer-outline{
+      display:none !important;
+    }
+    .square-onboarding-canvas{
+      height:400px !important;
+      padding:24px 0 !important;
+    }
+  }
+</style>
+</head>
+<body>
+
+<div id="password-gate">
+  <div class="gate-thumb"><img src="img/square_wireframe_img.png" alt="Vendor Order Guide" /></div>
+  <h2>Vendor Order Guide is password protected</h2>
+  <form id="password-form" onsubmit="return false;">
+    <input type="password" id="password-input" placeholder="Enter password" autocomplete="off">
+  </form>
+  <p class="error" id="password-error"></p>
+  <div class="gate-back"><a href="index.html#section-works">Back to Portfolio</a></div>
+</div>
+
+<div id="case-study-content" style="display:none;">
+
+<!--THIS IS THE NAV -->
+<div class="navbar topnav" id="sticker" role="navigation" style="position:fixed; line-height:60px; height:60px; background-color:rgba(255,255,255,1); box-shadow: 2px 2px 4px rgba(152,142,142,0.12);">
+  <div class="container">
+     <div class="col-md-12">
+     <h1><a class="navbar-brand float_left" id="home-button" href="index.html#home" class="scrollup">
+     <img src="img/logo_dom.png" width="200px;" alt="" />
+     </a></h1>
+      <div class="topnav" id="myTopnav">
+        <a href="javascript:void(0);" style="font-size:20px;" class="icon" onclick="myFunction()">&#9776;</a>
+        <a href="index.html#section-works" id="portfolio-button">Portfolio</a>
+        <a href="index.html#section-about" id="about-button">About</a>
+      </div>
+    </div>
+    <div class="col-md-2"></div>
+  </div>
+</div>
+
+<!-- HERO -->
+<img class="header_img" src="img/square/square_headers.png" alt="Square Order Guide Header" />
+
+<!-- INTRO -->
+<section style="background:#FFFFFF; padding:56px 0 70px 0;">
+  <div class="container">
+    <div class="col-md-12 text-center">
+      <img src="img/square/Square Logo.svg" alt="Square" style="height:52px;" />
+      <h2 class="txt-bold" style="margin-top:28px; margin-bottom:8px; color:#474B51;">AI Powered Order Guide</h2>
+    </div>
+    <div class="row">
+      <div class="col-md-1"></div>
+      <div class="col-md-10 text-center">
+        <h3 style="margin-top:0; margin-bottom:48px; color:#474B51; font-size:20px; line-height:32px; font-weight:500;">Helping restaurant owners reduce food costs by comparing vendor prices and buying smarter.</h3>
+      </div>
+      <div class="col-md-1"></div>
+    </div>
+
+    <div class="row">
+      <div class="col-md-2"></div>
+      <div class="col-md-8"><div class="line square-intro-line" style="width:300px;"></div></div>
+      <div class="col-md-2"></div>
+    </div>
+
+    <div class="row">
+      <div class="col-md-3" style="margin-top:24px;">
+        <h3 class="txt-bold" style="margin:0; color:#474B51;">Role</h3>
+        <p class="txt-regular" style="margin-top:3px; color:#474B51;">Staff product Designer</p>
+      </div>
+      <div class="col-md-3" style="margin-top:24px;">
+        <h3 class="txt-bold" style="margin:0; color:#474B51;">Team</h3>
+        <p class="txt-regular" style="margin-top:3px; color:#474B51;">1 PM, 1 Researcher,<br/>4 Engineers</p>
+      </div>
+      <div class="col-md-3" style="margin-top:24px;">
+        <h3 class="txt-bold" style="margin:0; color:#474B51;">Scope</h3>
+        <p class="txt-regular" style="margin-top:3px; color:#474B51;">0→1 Project (3 months)</p>
+      </div>
+      <div class="col-md-3" style="margin-top:24px;">
+        <h3 class="txt-bold" style="margin:0; color:#474B51;">Collablation</h3>
+        <p class="txt-regular" style="margin-top:3px; color:#474B51;">Retail, Fulfillment, and Reporting teams</p>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-md-2"></div>
+      <div class="col-md-8" style="margin-top:18px;"><div class="line square-intro-line" style="width:300px;"></div></div>
+      <div class="col-md-2"></div>
+    </div>
+
+    <div class="row">
+      <div class="col-md-1"></div>
+      <div class="col-md-10" style="margin-top:48px; color:#474B51; text-align:left;">
+        <h3 class="txt-bold" style="margin-top:0; margin-bottom:5px; color:#474B51; text-align:left;">Business Context</h3>
+        <p class="txt-regular mar-top5">Restaurant economics are structurally broken. Food costs have risen nearly <b>29% over the last five years and the average restaurant runs on a 3–9% total profit margin</b>. A single bad purchasing decision can flip a week from profitable to not. 2025 tariffs made a bad situation materially worse, forcing restaurants to raise prices, reduce staff, or close altogether.</p>
+        <p class="txt-regular mar-top10">Square's strategy is to use AI to help restaurants survive and thrive driving more GPV and attracting net-new sellers upmarket. <b>The goal for the company was economic empowerment</b>, and I was leading key initiatives to help Square move upmarket. My role was to lead design on one of those initiatives: a price comparison tool that helps restaurant owners buy smarter.</p>
+      </div>
+      <div class="col-md-1"></div>
+    </div>
+  </div>
+</section>
+
+<!-- QUOTE SECTION -->
+<section id="square_quotes">
+  <div class="container">
+    <div class="square-quotes-inner">
+      <div class="square-quote-percent">
+        <div class="square-percent-box">
+          <div class="square-percent-big">29%</div>
+          <div class="square-percent-small">Rise in food costs<br/>over 5 years</div>
+        </div>
+        <div class="square-percent-box">
+          <div class="square-percent-big">3–9%</div>
+          <div class="square-percent-small">Average restaurant<br/>profit margin</div>
+        </div>
+      </div>
+      <div class="square-quote-cards">
+        <img class="img-responsive" src="img/square/quote images.png" alt="Quotes" />
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CONTEXT / USERS -->
+<section class="mar-bot40 mar-top60">
+  <div class="container">
+    <div class="col-md-1"></div>
+    <div class="col-md-10">
+      <h3 class="txt-bold" style="margin-top:0; margin-bottom:5px; color:#474B51; text-align:left;">Discovery Research</h3>
+      <p class="txt-regular mar-top5">I conducted seller visits with the team across California to define our ICP and understand the nuances between procurement needs. While I was doing an empathy-building exercise, our researcher was conducting diary studies and surveys to capture a broader scope of the problem.</p>
+      <img class="img-responsive center mar-top20" src="img/square/discovery_img.png" alt="Discovery Research" />
+    </div>
+    <div class="col-md-1"></div>
+  </div>
+</section>
+
+<!-- PROBLEM -->
+<section class="mar-bot40 mar-top60">
+  <div class="container">
+    <div class="col-md-1"></div>
+    <div class="col-md-10">
+      <h3 class="txt-bold" style="margin-top:0; margin-bottom:5px; color:#474B51; text-align:left;">Current Processes</h3>
+      <p class="txt-regular mar-top5">Most processes were entirely manual. Sellers communicated with sales reps via email or text. Invoices were processed monthly, running a restaurant requires managing a series of IOUs and credits between vendor and restaurant with no single source of truth. <b> Owners were spending unnecessary hours normalizing unit cost across vendors </b> just to figure out the cost of ingredients. That's doing unnecessary math instead of running a restaurant.</p>
+      <img class="img-responsive center mar-top20" src="img/square/cureent process img.png" alt="Current Process" />
+    </div>
+  </div>
+</section>
+
+<!-- WHAT WE LEARNED -->
+<section class="mar-bot40 mar-top60">
+  <div class="container">
+    <div class="col-md-1"></div>
+    <div class="col-md-10">
+      <h3 class="txt-bold" style="margin-top:0; margin-bottom:5px; color:#474B51; text-align:left;">What We Learned</h3>
+      <p class="txt-regular mar-top5">After talking to 10 sellers through interviews, diary studies, and surveys, we validated the problem and identified key opportunity areas. The biggest takeaway: <b> there is a quality scale, sellers will try cheaper products, but only when quality isn't compromised.</b></p>
+    </div>
+  </div>
+</section>
+<div class="container">
+  <div class="row">
+    <div class="col-md-2"></div>
+    <div class="col-md-8">
+      <a rel="gallery-square-1" href="img/square/ingredient context.png" class="swipebox" title="Ingredient Context">
+        <img class="mar-top20 center" src="img/square/ingredient context.png" alt="Ingredient Context" style="display:block; margin-left:auto; margin-right:auto; width:100%; height:auto; max-width:100%;" />
+      </a>
+    </div>
+    <div class="col-md-2"></div>
+  </div>
+</div>
+
+<!-- IDEAL CUSTOMER PROFILE -->
+<section class="mar-bot40 mar-top60">
+  <div class="container">
+    <div class="col-md-1"></div>
+    <div class="col-md-10">
+      <h3 class="txt-bold" style="margin-top:0; margin-bottom:5px; color:#474B51; text-align:left;">Ideal Customer Profile</h3>
+      <p class="txt-regular mar-top5">After all our research that we conducted, we narrowed down on our ICP: <b> QSRs and Cafes w/ 1–5 locations </b> that needed price comparison tooling. Over five, we were seeing they needed more advanced tooling for order frequency.</p>
+      <p class="txt-regular mar-top10">For example, if you're a bakery selling vanilla cupcakes the flour is most important for texture, you'll pay any price. But the vanilla extract and sprinkles are supplementary and you're looking for cost savings there. Owners think in ingredient tiers, not categories. That insight shaped the entire product direction.</p>
+    </div>
+  </div>
+
+</section>
+<img class="img-responsive center mar-top20" src="img/square/QSR.png" alt="QSR" />
+
+<!-- JOURNEY MAPPING -->
+<section class="mar-bot40 mar-top60">
+  <div class="container">
+    <div class="col-md-1"></div>
+    <div class="col-md-10">
+      <h3 class="txt-bold" style="margin-top:0; margin-bottom:5px; color:#474B51; text-align:left;">Journey Mapping</h3>
+      <p class="txt-regular mar-top5">I made a journey map to <b> guide discussion with my PM and leadership as to what we could potentially be tackling</b>. I outlined opportunity areas along with pain points that owners told us. Walking through a concrete tomato-purchasing example made the problem tangible, abstract research doesn't move stakeholders, but a specific item at a specific price does.</p>
+      <a rel="gallery-square-1" href="img/square/vendor_map.png" class="swipebox" title="Vendor Map"><img class="img-responsive center mar-top20" src="img/square/vendor_map.png" alt="Vendor Map" /></a>
+      <a rel="gallery-square-1" href="img/square/price_journey 1.png" class="swipebox" title="Price Journey"><img class="img-responsive center mar-top20" src="img/square/price_journey 1.png" alt="Price Journey" /></a>
+    </div>
+  </div>
+</section>
+
+<!-- KEY PAIN POINTS -->
+<section class="mar-bot40 mar-top60">
+  <div class="container">
+    <div class="col-md-1"></div>
+    <div class="col-md-10">
+      <h3 class="txt-bold" style="margin-top:0; margin-bottom:5px; color:#474B51; text-align:left;">Key Pain Points</h3>
+      <ul class="txt-regular" style="margin-top:15px; padding-left:22px;">
+        <li style="margin-bottom:10px;"><b>#1 Time spent comparing price sheets between vendors </b></li>
+        <li style="margin-bottom:10px;"><b>#2 Converting units to understand pricing between vendors </b></li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<!-- STRATEGY AND PLANNING -->
+<section class="mar-bot40 mar-top60">
+  <div class="container">
+    <div class="col-md-1"></div>
+    <div class="col-md-10">
+      <h3 class="txt-bold" style="margin-top:0; margin-bottom:5px; color:#474B51; text-align:left;">Strategy and Planning</h3>
+      <p class="txt-regular mar-top5">We wanted to start with a price comparison tool, lowest-hanging fruit with the highest immediate impact. The long-term strategy was inventory tracking and insights, then purchase order fulfillment, and eventually driving down cost by doing group ordering on behalf of restaurant networks in a neighborhood as the longer term strategy. <br/><br/>Our strategy was presented to execs and core leadership, and we got bought in to proceed with the Food and Beverage vertical team.</p>
+      <a rel="gallery-square-1" href="img/square/strategy-img.png" class="swipebox" title="Strategy"><img class="img-responsive center mar-top20" src="img/square/strategy-img.png" alt="Strategy" /></a>
+      <div style="width:300px; height:4px; background-color:#7DCC93; border-radius:2px; margin:48px auto;"></div>
+    </div>
+  </div>
+</section>
+
+<!-- EXPLORATION AND PATTERNS -->
+<section class="mar-bot40 mar-top60">
+  <div class="container">
+    <div class="col-md-1"></div>
+    <div class="col-md-10">
+      <h3 class="txt-bold" style="margin-top:0; margin-bottom:5px; color:#474B51; text-align:left;">Exploration and Patterns</h3>
+      <p class="txt-regular mar-top5">I went through existing Square patterns to see what I could leverage not to reinvent, but to identify where we'd need net-new components vs. where we could ship faster with existing system primitives. I also used AI as a tool for discovery: it helped me rapidly iterate on directions and stress-test concepts I hadn't fully thought through.</p>
+      <a rel="gallery-square-1" href="img/square/competitors.png" class="swipebox" title="Competitors"><img class="img-responsive center mar-top20" src="img/square/competitors.png" alt="Competitors" /></a>
+      <a rel="gallery-square-1" href="img/square/components.png" class="swipebox" title="Components"><img class="img-responsive center mar-top20" src="img/square/components.png" alt="Components" /></a>
+    </div>
+  </div>
+</section>
+
+<!-- ONBOARDING CONCEPT -->
+<section class="mar-bot40 mar-top60">
+  <div class="container">
+    <div class="col-md-12">
+      <h3 class="txt-bold" style="margin-top:0; margin-bottom:5px; color:#474B51; text-align:center;">Onboarding Concept - Order Guide (Empty)</h3>
+      <div class="square-onboarding-canvas" style="position:relative; height:400px; margin-top:20px; overflow:hidden; background:#2E2E2E; border-radius:15px;">
+        <a rel="gallery-square-1" href="img/square/emptystate concept.png" class="swipebox" title="Empty State Concept"><img class="img-responsive square-empty-static" src="img/square/emptystate concept.png" alt="Empty State Concept" style="position:absolute; left:28px; top:50%; transform:translateY(-50%); max-width:calc(50% - 42px); max-height:100%; height:auto; width:auto;" /></a>
+
+        <img class="img-responsive square-computer-outline" src="img/square/computer_outline.png" alt="Computer Outline" style="position:absolute; right:0; bottom:0; width:calc(50% - 14px); height:auto; z-index:1;" />
+        <img class="img-responsive square-empty-gif" src="img/square/empty state_concept.gif" alt="Empty State Concept GIF" style="position:absolute; right:28px; top:50%; transform:translateY(-50%); width:calc(50% - 72px); height:auto; z-index:2;" />
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- VENDOR MANAGEMENT CONCEPT -->
+<section class="mar-bot40 mar-top60">
+  <div class="container">
+    <div class="col-md-12">
+      <h3 class="txt-bold" style="margin-top:0; margin-bottom:5px; color:#474B51; text-align:center;">Managing Vendors Concept</h3>
+      <div class="square-onboarding-canvas" style="position:relative; height:400px; margin-top:20px; overflow:hidden; background:#2E2E2E; border-radius:15px;">
+        <a rel="gallery-square-1" href="img/square/vendor management concept.png" class="swipebox" title="Vendor Management Concept"><img class="img-responsive square-empty-static" src="img/square/vendor management concept.png" alt="Vendor Management Concept" style="position:absolute; left:28px; top:50%; transform:translateY(-50%); max-width:calc(50% - 42px); max-height:100%; height:auto; width:auto;" /></a>
+
+        <img class="img-responsive square-computer-outline" src="img/square/computer_outline.png" alt="Computer Outline" style="position:absolute; right:0; bottom:0; width:calc(50% - 14px); height:auto; z-index:1;" />
+        <img class="img-responsive square-empty-gif" src="img/square/vendor management concept.gif" alt="Vendor Management Concept GIF" style="position:absolute; right:28px; top:50%; transform:translateY(-50%); width:calc(50% - 72px); height:auto; z-index:2;" />
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ORDER GUIDE CONCEPT -->
+<section class="mar-bot40 mar-top60">
+  <div class="container">
+    <div class="col-md-12">
+      <h3 class="txt-bold" style="margin-top:0; margin-bottom:5px; color:#474B51; text-align:center;">Comparing Prices Concept - Order Guide (Data Filled)</h3>
+      <div class="square-onboarding-canvas" style="position:relative; height:400px; margin-top:20px; overflow:hidden; background:#2E2E2E; border-radius:15px;">
+        <a rel="gallery-square-1" href="img/square/order guide concept.png" class="swipebox" title="Order Guide Concept"><img class="img-responsive square-empty-static" src="img/square/order guide concept.png" alt="Order Guide Concept" style="position:absolute; left:28px; top:50%; transform:translateY(-50%); max-width:calc(50% - 42px); max-height:100%; height:auto; width:auto;" /></a>
+
+        <img class="img-responsive square-computer-outline" src="img/square/computer_outline.png" alt="Computer Outline" style="position:absolute; right:0; bottom:0; width:calc(50% - 14px); height:auto; z-index:1;" />
+        <img class="img-responsive square-empty-gif" src="img/square/order guide concept.gif" alt="Order Guide Concept GIF" style="position:absolute; right:28px; top:50%; transform:translateY(-50%); width:calc(50% - 72px); height:auto; z-index:2;" />
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CUSTOM GPT -->
+<section class="mar-bot40 mar-top60">
+  <div class="container">
+    <div class="col-md-1"></div>
+    <div class="col-md-10">
+      <h3 class="txt-bold" style="margin-top:0; margin-bottom:5px; color:#474B51; text-align:left;">Custom GPT</h3>
+      <p class="txt-regular mar-top5">I built a custom GPT trained on our research reports to simulate an “owner” persona, allowing me to quickly gut-check design directions and maintain momentum. Beyond the research inputs, I incorporated key workflows we had identified so the model could make more informed, consistent decisions. This approach significantly accelerated early-stage exploration without introducing additional research overhead for each decision.</p>
+      <a rel="gallery-square-1" href="img/square/emergency%20ingredients.png" class="swipebox" title="Emergency ingredients"><img class="img-responsive center mar-top20" src="img/square/emergency%20ingredients.png" alt="Emergency ingredients research context" /></a>
+      <p class="txt-regular mar-top20">Feedback results for designs:</p>
+      <a rel="gallery-square-1" href="img/square/chatgpt_img.png" class="swipebox" title="Custom GPT feedback"><img class="img-responsive center mar-top20" src="img/square/chatgpt_img.png" alt="Custom GPT feedback" /></a>
+    </div>
+  </div>
+</section>
+
+<!-- CRITIQUE AND TESTING -->
+<section class="mar-bot40 mar-top60">
+  <div class="container">
+    <div class="col-md-1"></div>
+    <div class="col-md-10">
+      <h3 class="txt-bold" style="margin-top:0; margin-bottom:5px; color:#474B51; text-align:left;">Critique and Testing</h3>
+      <p class="txt-regular mar-top5">The value prop preview was too buried, we needed to surface potential savings sooner. Sellers also wanted to see product images to understand what they were actually available to purchase. Both became P0 fixes before engineering handoff.</p>
+      <img class="img-responsive center mar-top20" src="img/square/critique and testing.png" alt="Critique and Testing" />
+      <div class="line" style="width:300px; margin:48px auto; height:4px; border-radius:2px;"></div>
+    </div>
+  </div>
+</section>
+
+<!-- ONBOARDING -->
+<section class="mar-bot0 mar-top60">
+  <div class="container">
+    <div class="col-md-1"></div>
+    <div class="col-md-10">
+      <h3 class="txt-bold" style="margin-top:0; margin-bottom:5px; color:#474B51; text-align:left;">Onboarding</h3>
+      <p class="txt-regular mar-top5">After getting feedback that the value prop was buried, I opened the first item in the table so sellers could immediately see what live data would look like, with a prompt to connect their first vendor. I wanted to pre-fill vendor data to reduce friction, but pricing is negotiated seller to seller, so pre-populating it would have surfaced inaccurate information. The empty state became an entry point where sellers could immediately see the value, have most of their ingredients pre-populated, and quickly attach a vendor to start comparing prices.</p>
+    </div>
+    <div class="col-md-12" style="margin-top:48px; margin-bottom:64px;">
+      <img class="img-responsive center" src="img/square/empty state order guide.gif" alt="Onboarding" style="border-radius:16px; box-shadow:0 0 24px rgba(0,0,0,0.10); width:100%;" />
+    </div>
+  </div>
+</section>
+
+<!-- VENDOR MANAGEMENT -->
+<section class="mar-bot0 mar-top0">
+  <div class="container">
+    <div class="col-md-1"></div>
+    <div class="col-md-10">
+      <h3 class="txt-bold" style="margin-top:0; margin-bottom:5px; color:#474B51; text-align:left;">Vendor Management</h3>
+      <p class="txt-regular mar-top5">Vendor management centered on surfacing the right information at the right time. I removed contact details from the main view and replaced them with last pricing update status, what sellers actually needed to see at a glance. Details and locations were managed within the blade UI to keep the surface clean. To eliminate manual data entry entirely, I leveraged Retail's OCR feature to capture physical price sheets and pull pricing data automatically.</p>
+    </div>
+    <div class="col-md-12" style="margin-top:48px; margin-bottom:64px;">
+      <img class="img-responsive center" src="img/square/vendor_management.gif" alt="Vendor Management" style="border-radius:16px; box-shadow:0 0 24px rgba(0,0,0,0.10); width:100%;" />
+    </div>
+  </div>
+</section>
+
+<!-- ORDER GUIDE -->
+<section class="mar-bot0 mar-top0">
+  <div class="container">
+    <div class="col-md-1"></div>
+    <div class="col-md-10">
+      <h3 class="txt-bold" style="margin-top:0; margin-bottom:5px; color:#474B51; text-align:left;">Order Guide</h3>
+      <p class="txt-regular mar-top5">The order guide was built around what sellers told us mattered most, organized by priority: brand name, vendor and order minimum, delivery window, sold by price, and unit price. Sellers could configure the table using filter options for location, vendor, and item type, giving them a single view to compare costs across vendors without the manual legwork. After validating ideas with AI prototypes, we added drag-and-drop functionality so sellers could move items into different lists to compare them across groups.</p>
+      <div style="margin-top:48px; text-align:left;">
+        <a class="green_button" href="https://order-guide.vercel.app/" target="_blank" rel="noopener noreferrer" style="display:inline-block; width:auto; min-width:200px; height:auto; padding:10px 16px; line-height:20px;">AI Prototype</a>
+        <div style="font-size:12px; margin-top:8px; color:#474B51;">Built with V0 (Vercel) and Cursor</div>
+      </div>
+    </div>
+    <div class="col-md-12" style="margin-top:48px; margin-bottom:64px;">
+      <img class="img-responsive center" src="img/square/order guide.gif" alt="Order Guide" style="border-radius:16px; box-shadow:0 0 24px rgba(0,0,0,0.10); width:100%;" />
+    </div>
+  </div>
+</section>
+
+<!-- METRICS -->
+<section class="mar-bot40 mar-top0">
+  <div class="container">
+    <div class="col-md-1"></div>
+    <div class="col-md-10">
+      <h3 class="txt-bold" style="margin-top:0; margin-bottom:5px; color:#474B51; text-align:left;">Metrics</h3>
+      <ul class="txt-regular" style="margin-top:15px; padding-left:22px;">
+        <li style="margin-bottom:10px;">Order Guide consistently identifies <b>over 29% in average savings per restaurant</b> (based on 200+ large food vendors)</li>
+        <li style="margin-bottom:10px;">We had 500+ sellers adopting order guide during beta with <b> MOM retention at ~42% </b></li>
+        <li style="margin-bottom:10px;">$1,00,000+ savings in first quarter of launch</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<!-- TAKEAWAY -->
+<section class="mar-bot40 mar-top60">
+  <div class="container">
+    <div class="col-md-1"></div>
+    <div class="col-md-10">
+      <h3 class="txt-bold" style="margin-top:0; margin-bottom:5px; color:#474B51; text-align:left;">Takeaway</h3>
+      <p class="txt-regular mar-top5">Looking back, I would have invested more time in the multiple list use case, customizable ordering lists would have meaningfully streamlined the reordering experience for sellers. On the AI side, I would have used agents instead of custom GPTs so vendor pricing data refreshes automatically rather than requiring manual updates. And for prototyping, I would have used Cursor and Figma MCP to build out the webpage from the start, which would have compressed the design-to-handoff loop significantly.</p>
+      <a class="green_button" href="https://squareup.com/us/en/the-bottom-line/inside-square/order-guide" target="_blank" rel="noopener noreferrer" style="display:block; margin-top:25px; text-align:center;">Learn more</a>
+    </div>
+  </div>
+</section>
+
+<!-- OTHER PROJECTS -->
+<section class="cream_bg pad-top30">
+  <h3 class="txt-bold mar-top10 pad-bot20 text-center">Other Projects</h3>
+  <div class="container">
+    <div class="col-md-4 col-sm-6">
+      <div class="project-items" id="shipt">
+        <img class="img-responsive center" style="height:50%;" src="img/shipt_thumb.png" alt="" />
+        <h4 class="txt-white text-center">Shipt - Mobile</h4>
+        <div class="project_button">
+        <a class="primary_button center text-center" href="shipt001.html">Read More</a>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-4 col-sm-6">
+      <div class="project-items" id="visbit_streaming">
+        <img class="img-responsive center" style="height:50%;" src="img/visbit_thumb.png" alt="" />
+        <h4 class="txt-white text-center">Visbit - Web & Mobile</h4>
+        <div class="project_button">
+        <a class="primary_button center text-center" href="visbit.html">Read More</a>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-4 col-sm-6">
+      <div class="project-items" id="pixbrite">
+        <img class="img-responsive center" style="height:50%;" src="img/pixbrite_thumb.png" alt="" />
+        <h4 class="txt-white text-center">Pixbrite - Mobile</h4>
+        <div class="project_button">
+        <a class="primary_button center text-center" href="pixbrite.html">Read More</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer>
+<div class="container">
+  <h5 class="text-center mar-top20">Coded from scratch by Dom Pedruco</h5>
+</div>
+</footer>
+
+<a href="#home" class="scrollup"><i class="fa fa-chevron-up"></i></a>
+
+</div><!-- #case-study-content -->
+
+<script src="js/jquery.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/jquery.swipebox.js"></script>
+<script>
+(function(){
+  var PASS = 'donut';
+  var gate = document.getElementById('password-gate');
+  var content = document.getElementById('case-study-content');
+  var input = document.getElementById('password-input');
+  var err = document.getElementById('password-error');
+  var form = document.getElementById('password-form');
+
+  if (sessionStorage.getItem('square_unlocked') === '1') {
+    gate.style.display = 'none';
+    content.style.display = 'block';
+    return;
+  }
+
+  gate.style.display = 'flex';
+  content.style.display = 'none';
+
+  function unlock() {
+    if (input.value === PASS) {
+      sessionStorage.setItem('square_unlocked', '1');
+      gate.style.display = 'none';
+      content.style.display = 'block';
+      err.textContent = '';
+    } else {
+      err.textContent = 'Incorrect password. Please try again.';
+    }
+  }
+
+  form.addEventListener('submit', function(e){ e.preventDefault(); unlock(); });
+  input.addEventListener('keydown', function(e){ if (e.key === 'Enter') { e.preventDefault(); unlock(); } });
+})();
+</script>
+<script>
+$(document).ready(function(){ $('.swipebox').swipebox(); });
+</script>
+
+</body>
+</html>

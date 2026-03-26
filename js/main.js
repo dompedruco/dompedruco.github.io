@@ -101,17 +101,21 @@
 
 
 
-	
-	//nicescroll
-	$("html").niceScroll({zindex:999,cursorborder:"",cursorborderradius:"2px",cursorcolor:"#191919",cursoropacitymin:.5});
+	// NiceScroll replaces native scrolling (pointer/fake div); it breaks touch panning on most tablets and many laptops with touch.
 	function initNice() {
-		if($(window).innerWidth() <= 960) {
-			$('html').niceScroll().remove();
-		} else {
-			$("html").niceScroll({zindex:999,cursorborder:"",cursorborderradius:"2px",cursorcolor:"#191919",cursoropacitymin:.5});
+		var $html = $("html");
+		var ns = $html.getNiceScroll();
+		if (ns && ns.length) {
+			ns.remove();
+		}
+		var w = $(window).innerWidth();
+		var isTouch = ("ontouchstart" in window) || (navigator.maxTouchPoints > 0);
+		if (w > 1024 && !isTouch) {
+			$html.niceScroll({zindex:999,cursorborder:"",cursorborderradius:"2px",cursorcolor:"#191919",cursoropacitymin:.5});
 		}
 	}
-	$(window).load(initNice);
-	$(window).resize(initNice);
+	$(document).ready(initNice);
+	$(window).on("load", initNice);
+	$(window).on("resize", initNice);
 
 })(jQuery);
