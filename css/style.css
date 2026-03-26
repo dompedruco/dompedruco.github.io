@@ -906,6 +906,10 @@ nav#filter a {
 	background-color:#D995A9;
 }
 
+#square_order_guide{
+	background-color:#404040;
+}
+
 div#square.portfolio-item {
 	background: #404040 !important;
 }
