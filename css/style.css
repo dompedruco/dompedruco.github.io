@@ -667,10 +667,18 @@ margin-top:100px;
 /*===========================
   --- splash section ----
 =========================== */
-#home{
-	overflow:hidden;
-	background:url('../img/background.png') bottom no-repeat fixed;
-	background-size: cover;
+@keyframes gradientShift {
+  0%   { background-position: 0% 0%; }
+  33%  { background-position: 100% 0%; }
+  66%  { background-position: 100% 100%; }
+  100% { background-position: 0% 0%; }
+}
+
+#home {
+  overflow: hidden;
+  background: linear-gradient(135deg, #8DDAAE, #7DCC93, #7DCC93, #73C285);
+  background-size: 400% 400%;
+  animation: gradientShift 10s ease-in-out infinite;
 }
 
 #bg_vd{
