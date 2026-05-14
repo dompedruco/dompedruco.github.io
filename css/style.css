@@ -667,33 +667,18 @@ margin-top:100px;
 /*===========================
   --- splash section ----
 =========================== */
-@keyframes gradientDrift {
-  0%   { background-position: 50% 0%; }
-  50%  { background-position: 50% 30%; }
-  100% { background-position: 50% 0%; }
-}
-
-@keyframes pulse {
-  0%   { transform: translate(0px, 0px)    scale(1);    opacity: var(--op); }
-  25%  { transform: translate(10px, -14px) scale(1.1);  opacity: calc(var(--op) * 0.9); }
-  50%  { transform: translate(-8px, -20px) scale(1.2);  opacity: calc(var(--op) * 0.85); }
-  75%  { transform: translate(-12px, -6px) scale(1.1);  opacity: calc(var(--op) * 0.9); }
-  100% { transform: translate(0px, 0px)    scale(1);    opacity: var(--op); }
+@keyframes gradientShift {
+  0%   { background-position: 0% 0%; }
+  33%  { background-position: 100% 0%; }
+  66%  { background-position: 100% 100%; }
+  100% { background-position: 0% 0%; }
 }
 
 #home {
   overflow: hidden;
-  background: linear-gradient(to bottom, #76DA9A 0%, #76DA9A 25%, #68D191 50%, #5AC888 75%, #4EC07F 100%);
-  background-size: 100% 200%;
-  animation: gradientDrift 18s ease-in-out infinite;
-}
-
-.bokeh-wrap {
-  position: absolute;
-  inset: 0;
-  overflow: hidden;
-  pointer-events: none;
-  z-index: 0;
+  background: linear-gradient(135deg, #8DDAAE, #7DCC93, #7DCC93, #73C285);
+  background-size: 400% 400%;
+  animation: gradientShift 10s ease-in-out infinite;
 }
 
 .bk {
