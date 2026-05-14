@@ -667,11 +667,51 @@ margin-top:100px;
 /*===========================
   --- splash section ----
 =========================== */
-#home{
-	overflow:hidden;
-	background:url('../img/background.png') bottom no-repeat fixed;
-	background-size: cover;
+@keyframes gradientDrift {
+  0%   { background-position: 50% 0%; }
+  50%  { background-position: 50% 30%; }
+  100% { background-position: 50% 0%; }
 }
+
+@keyframes pulse {
+  0%   { transform: translate(0px, 0px)    scale(1);    opacity: var(--op); }
+  25%  { transform: translate(10px, -14px) scale(1.1);  opacity: calc(var(--op) * 0.9); }
+  50%  { transform: translate(-8px, -20px) scale(1.2);  opacity: calc(var(--op) * 0.85); }
+  75%  { transform: translate(-12px, -6px) scale(1.1);  opacity: calc(var(--op) * 0.9); }
+  100% { transform: translate(0px, 0px)    scale(1);    opacity: var(--op); }
+}
+
+#home {
+  overflow: hidden;
+  background: linear-gradient(to bottom, #76DA9A 0%, #76DA9A 25%, #68D191 50%, #5AC888 75%, #4EC07F 100%);
+  background-size: 100% 200%;
+  animation: gradientDrift 18s ease-in-out infinite;
+}
+
+.bokeh-wrap {
+  position: absolute;
+  inset: 0;
+  overflow: hidden;
+  pointer-events: none;
+  z-index: 0;
+}
+
+.bk {
+  position: absolute;
+  border-radius: 50%;
+  background: rgba(255,255,255,0.55);
+  filter: blur(10px);
+  animation: pulse var(--dur) ease-in-out infinite var(--delay);
+}
+
+.bk:nth-child(1) { --op:0.55; --dur:8s;  --delay:0s;   width:77px;  height:77px;  top:4%;   left:4%; }
+.bk:nth-child(2) { --op:0.45; --dur:11s; --delay:-3s;  width:44px;  height:44px;  top:6%;   left:30%; }
+.bk:nth-child(3) { --op:0.6;  --dur:13s; --delay:-5s;  width:99px;  height:99px;  top:2%;   left:80%; }
+.bk:nth-child(4) { --op:0.4;  --dur:9s;  --delay:-2s;  width:60px;  height:60px;  top:30%;  left:12%; }
+.bk:nth-child(5) { --op:0.45; --dur:14s; --delay:-7s;  width:46px;  height:46px;  top:20%;  left:68%; }
+.bk:nth-child(6) { --op:0.4;  --dur:10s; --delay:-4s;  width:71px;  height:71px;  top:55%;  left:75%; }
+.bk:nth-child(7) { --op:0.35; --dur:12s; --delay:-6s;  width:53px;  height:53px;  top:60%;  left:40%; }
+.bk:nth-child(8) { --op:0.4;  --dur:9s;  --delay:-1s;  width:27px;  height:27px;  top:75%;  left:20%; }
 
 #bg_vd{
 	height:700px;
