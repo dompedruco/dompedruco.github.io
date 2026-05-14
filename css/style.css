@@ -681,6 +681,23 @@ margin-top:100px;
   animation: gradientShift 10s ease-in-out infinite;
 }
 
+.bk {
+  position: absolute;
+  border-radius: 50%;
+  background: rgba(255,255,255,0.55);
+  filter: blur(10px);
+  animation: pulse var(--dur) ease-in-out infinite var(--delay);
+}
+
+.bk:nth-child(1) { --op:0.55; --dur:8s;  --delay:0s;   width:77px;  height:77px;  top:4%;   left:4%; }
+.bk:nth-child(2) { --op:0.45; --dur:11s; --delay:-3s;  width:44px;  height:44px;  top:6%;   left:30%; }
+.bk:nth-child(3) { --op:0.6;  --dur:13s; --delay:-5s;  width:99px;  height:99px;  top:2%;   left:80%; }
+.bk:nth-child(4) { --op:0.4;  --dur:9s;  --delay:-2s;  width:60px;  height:60px;  top:30%;  left:12%; }
+.bk:nth-child(5) { --op:0.45; --dur:14s; --delay:-7s;  width:46px;  height:46px;  top:20%;  left:68%; }
+.bk:nth-child(6) { --op:0.4;  --dur:10s; --delay:-4s;  width:71px;  height:71px;  top:55%;  left:75%; }
+.bk:nth-child(7) { --op:0.35; --dur:12s; --delay:-6s;  width:53px;  height:53px;  top:60%;  left:40%; }
+.bk:nth-child(8) { --op:0.4;  --dur:9s;  --delay:-1s;  width:27px;  height:27px;  top:75%;  left:20%; }
+
 #bg_vd{
 	height:700px;
 	width:100%;
